@@ -8,9 +8,9 @@
         2
       ],
       "padding": [
-        4,
         1,
-        4,
+        1,
+        1,
         1
       ],
       "dilation": [
@@ -44,8 +44,8 @@
         "shape": [
           64,
           1,
-          10,
-          10
+          3,
+          3
         ],
         "dtype": "int8",
         "meta": null
@@ -94,8 +94,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -118,8 +118,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -132,8 +132,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -151,10 +151,10 @@
         1
       ],
       "padding": [
-        1,
-        1,
-        1,
-        1
+        3,
+        3,
+        3,
+        3
       ],
       "dilation": [
         1,
@@ -175,8 +175,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -187,8 +187,8 @@
         "shape": [
           64,
           1,
-          3,
-          3
+          7,
+          7
         ],
         "dtype": "int8",
         "meta": null
@@ -237,8 +237,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -261,8 +261,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -275,8 +275,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -318,8 +318,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -380,8 +380,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -404,8 +404,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -418,8 +418,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -461,8 +461,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -523,8 +523,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -547,8 +547,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -561,8 +561,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -604,8 +604,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -666,8 +666,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -690,8 +690,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -704,8 +704,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -747,8 +747,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -809,8 +809,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -833,8 +833,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -847,8 +847,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -890,8 +890,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -952,8 +952,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -976,8 +976,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -990,8 +990,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -1033,8 +1033,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -1095,8 +1095,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -1119,8 +1119,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -1133,8 +1133,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -1176,8 +1176,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -1238,8 +1238,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": {
@@ -1262,8 +1262,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -1276,8 +1276,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
@@ -1304,8 +1304,8 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": null
@@ -2649,11 +2649,9 @@
     ]
   },
   {
-    "name": "cast@50",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
+    "name": "greater_equal@50",
+    "type": "greater_equal",
+    "attrs": {},
     "inputs": [
       {
         "name": "out_nn.mcuconv2d@16",
@@ -2661,68 +2659,33 @@
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@50",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "greater_equal@51",
-    "type": "greater_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_cast@50",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
       },
       {
-        "name": "greater_equal@51-constant",
+        "name": "greater_equal@50-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
-          "data": -128.0
+          "data": -128
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_greater_equal@51",
+        "name": "out_greater_equal@50",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -2732,43 +2695,43 @@
     ]
   },
   {
-    "name": "less_equal@52",
+    "name": "less_equal@51",
     "type": "less_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_cast@50",
+        "name": "out_nn.mcuconv2d@16",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       },
       {
-        "name": "less_equal@52-constant",
+        "name": "less_equal@51-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
-          "data": 127.0
+          "data": 127
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_less_equal@52",
+        "name": "out_less_equal@51",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -2778,30 +2741,30 @@
     ]
   },
   {
-    "name": "multiply@53",
+    "name": "multiply@52",
     "type": "multiply",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_greater_equal@51",
+        "name": "out_greater_equal@50",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_less_equal@52",
+        "name": "out_less_equal@51",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
@@ -2809,13 +2772,13 @@
     ],
     "outputs": [
       {
-        "name": "out_multiply@53",
+        "name": "out_multiply@52",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -2825,7 +2788,7 @@
     ]
   },
   {
-    "name": "cast@54",
+    "name": "cast@53",
     "type": "cast",
     "attrs": {
       "dtype": "float32"
@@ -2846,7 +2809,7 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@54",
+        "name": "out_cast@53",
         "var_type": "activation",
         "shape": [
           10,
@@ -2862,7 +2825,7 @@
     ]
   },
   {
-    "name": "nn.conv2d_transpose@55",
+    "name": "nn.conv2d_transpose@54",
     "type": "nn.conv2d_transpose",
     "attrs": {
       "channels": 64,
@@ -2908,7 +2871,7 @@
         "meta": null
       },
       {
-        "name": "out_cast@54",
+        "name": "out_cast@53",
         "var_type": "activation",
         "shape": [
           10,
@@ -2922,7 +2885,7 @@
     ],
     "outputs": [
       {
-        "name": "out_nn.conv2d_transpose@55",
+        "name": "out_nn.conv2d_transpose@54",
         "var_type": "activation",
         "shape": [
           1,
@@ -2938,12 +2901,12 @@
     ]
   },
   {
-    "name": "multiply@56",
+    "name": "multiply@55",
     "type": "multiply",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_nn.conv2d_transpose@55",
+        "name": "out_nn.conv2d_transpose@54",
         "var_type": "activation",
         "shape": [
           1,
@@ -2955,20 +2918,20 @@
         "meta": null
       },
       {
-        "name": "multiply@56-constant",
+        "name": "multiply@55-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
         "dtype": "float32",
         "meta": {
-          "data": 0.020833300426602364
+          "data": 0.00800000037997961
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_multiply@56",
+        "name": "out_multiply@55",
         "var_type": "activation",
         "shape": [
           1,
@@ -2984,27 +2947,27 @@
     ]
   },
   {
-    "name": "ones@57",
+    "name": "ones@56",
     "type": "ones",
     "attrs": {
       "shape": [
         1,
         64,
-        24,
-        2
+        25,
+        5
       ],
       "dtype": "float32"
     },
     "inputs": [],
     "outputs": [
       {
-        "name": "out_ones@57",
+        "name": "out_ones@56",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3014,12 +2977,12 @@
     ]
   },
   {
-    "name": "multiply@58",
+    "name": "multiply@57",
     "type": "multiply",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@56",
+        "name": "out_multiply@55",
         "var_type": "activation",
         "shape": [
           1,
@@ -3031,13 +2994,13 @@
         "meta": null
       },
       {
-        "name": "out_ones@57",
+        "name": "out_ones@56",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
@@ -3045,13 +3008,13 @@
     ],
     "outputs": [
       {
-        "name": "out_multiply@58",
+        "name": "out_multiply@57",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3061,27 +3024,27 @@
     ]
   },
   {
-    "name": "zeros@59",
+    "name": "zeros@58",
     "type": "zeros",
     "attrs": {
       "shape": [
         1,
         64,
-        24,
-        2
+        25,
+        5
       ],
       "dtype": "float32"
     },
     "inputs": [],
     "outputs": [
       {
-        "name": "out_zeros@59",
+        "name": "out_zeros@58",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3091,42 +3054,42 @@
     ]
   },
   {
-    "name": "where@60",
+    "name": "where@59",
     "type": "where",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@53",
+        "name": "out_multiply@52",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_multiply@58",
+        "name": "out_multiply@57",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
       },
       {
-        "name": "out_zeros@59",
+        "name": "out_zeros@58",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
@@ -3134,13 +3097,13 @@
     ],
     "outputs": [
       {
-        "name": "out_where@60",
+        "name": "out_where@59",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3150,22 +3113,20 @@
     ]
   },
   {
-    "name": "reshape@61",
-    "type": "reshape",
+    "name": "cast@60",
+    "type": "cast",
     "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
+      "dtype": "int32"
     },
     "inputs": [
       {
-        "name": "v4_conv_1_scale",
-        "var_type": "parameter",
+        "name": "out_where@59",
+        "var_type": "activation",
         "shape": [
-          64
+          1,
+          64,
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
@@ -3173,15 +3134,15 @@
     ],
     "outputs": [
       {
-        "name": "out_reshape@61",
+        "name": "out_cast@60",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          1,
-          1
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -3189,54 +3150,7 @@
     ]
   },
   {
-    "name": "multiply@62",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@60",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@61",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@62",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@63",
+    "name": "sum@61",
     "type": "sum",
     "attrs": {
       "axis": [
@@ -3247,26 +3161,26 @@
     },
     "inputs": [
       {
-        "name": "out_multiply@62",
+        "name": "out_cast@60",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_sum@63",
+        "name": "out_sum@61",
         "var_type": "activation",
         "shape": [
           64
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 0,
           "output_info": "v4_conv_1_bias"
@@ -3275,34 +3189,76 @@
     ]
   },
   {
-    "name": "cast@64",
+    "name": "reshape@62",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_nn.mcutruncate@15",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@62",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@63",
     "type": "cast",
     "attrs": {
       "dtype": "float32"
     },
     "inputs": [
       {
-        "name": "out_nn.mcuconv2d@14",
+        "name": "out_reshape@62",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "int32",
+        "dtype": "int8",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_cast@64",
+        "name": "out_cast@63",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3312,45 +3268,196 @@
     ]
   },
   {
-    "name": "greater_equal@65",
-    "type": "greater_equal",
-    "attrs": {},
+    "name": "tile@64",
+    "type": "tile",
+    "attrs": {
+      "reps": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
     "inputs": [
       {
-        "name": "out_cast@64",
+        "name": "out_where@59",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_tile@64",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@65",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        -1,
+        1,
+        0,
+        0
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_tile@64",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@65",
+        "var_type": "activation",
+        "shape": [
+          4096,
+          1,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "nn.conv2d@66",
+    "type": "nn.conv2d",
+    "attrs": {
+      "strides": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 64,
+      "channels": null,
+      "kernel_size": null,
+      "data_layout": "NCHW",
+      "kernel_layout": "OIHW",
+      "out_layout": "",
+      "out_dtype": "float32"
+    },
+    "inputs": [
+      {
+        "name": "out_cast@63",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
       },
       {
-        "name": "greater_equal@65-constant",
-        "var_type": "constant",
+        "name": "out_reshape@65",
+        "var_type": "activation",
         "shape": [
+          4096,
+          1,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_nn.conv2d@66",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          1,
           1
         ],
         "dtype": "float32",
         "meta": {
-          "data": -128.0
+          "children": 1
         }
+      }
+    ]
+  },
+  {
+    "name": "reshape@67",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        1,
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_nn.conv2d@66",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_greater_equal@65",
+        "name": "out_reshape@67",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          64,
+          1,
+          1
         ],
-        "dtype": "bool",
+        "dtype": "float32",
         "meta": {
           "children": 1
         }
@@ -3358,24 +3465,184 @@
     ]
   },
   {
-    "name": "less_equal@66",
-    "type": "less_equal",
-    "attrs": {},
+    "name": "sum@68",
+    "type": "sum",
+    "attrs": {
+      "axis": [
+        0
+      ],
+      "keepdims": 0,
+      "exclude": 0
+    },
     "inputs": [
       {
-        "name": "out_cast@64",
+        "name": "out_reshape@67",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_sum@68",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "transpose@69",
+    "type": "transpose",
+    "attrs": {
+      "axes": [
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_sum@68",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_transpose@69",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "abs@70",
+    "type": "abs",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@69",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_abs@70",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "max@71",
+    "type": "max",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 1,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_abs@70",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_max@71",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@72",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_max@71",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
         ],
         "dtype": "float32",
         "meta": null
       },
       {
-        "name": "less_equal@66-constant",
+        "name": "divide@72-constant",
         "var_type": "constant",
         "shape": [
           1
@@ -3388,13 +3655,144 @@
     ],
     "outputs": [
       {
-        "name": "out_less_equal@66",
+        "name": "out_divide@72",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@73",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@69",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@72",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@73",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@74",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@73",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@74",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 0,
+          "output_info": "v4_conv_1_weight"
+        }
+      }
+    ]
+  },
+  {
+    "name": "greater_equal@75",
+    "type": "greater_equal",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_nn.mcuconv2d@14",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "greater_equal@75-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": -128
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_greater_equal@75",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -3404,30 +3802,76 @@
     ]
   },
   {
-    "name": "multiply@67",
-    "type": "multiply",
+    "name": "less_equal@76",
+    "type": "less_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_greater_equal@65",
+        "name": "out_nn.mcuconv2d@14",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "less_equal@76-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_less_equal@76",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "bool",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "multiply@77",
+    "type": "multiply",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_greater_equal@75",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_less_equal@66",
+        "name": "out_less_equal@76",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
@@ -3435,13 +3879,13 @@
     ],
     "outputs": [
       {
-        "name": "out_multiply@67",
+        "name": "out_multiply@77",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -3451,7 +3895,7 @@
     ]
   },
   {
-    "name": "cast@68",
+    "name": "cast@78",
     "type": "cast",
     "attrs": {
       "dtype": "float32"
@@ -3472,7 +3916,7 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@68",
+        "name": "out_cast@78",
         "var_type": "activation",
         "shape": [
           64,
@@ -3488,7 +3932,7 @@
     ]
   },
   {
-    "name": "nn.conv2d_transpose@69",
+    "name": "nn.conv2d_transpose@79",
     "type": "nn.conv2d_transpose",
     "attrs": {
       "channels": 64,
@@ -3518,23 +3962,23 @@
       "data_layout": "NCHW",
       "kernel_layout": "IOHW",
       "out_layout": "",
-      "out_dtype": ""
+      "out_dtype": "float32"
     },
     "inputs": [
       {
-        "name": "out_multiply@62",
+        "name": "out_where@59",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
       },
       {
-        "name": "out_cast@68",
+        "name": "out_cast@78",
         "var_type": "activation",
         "shape": [
           64,
@@ -3548,13 +3992,13 @@
     ],
     "outputs": [
       {
-        "name": "out_nn.conv2d_transpose@69",
+        "name": "out_nn.conv2d_transpose@79",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3564,72 +4008,18 @@
     ]
   },
   {
-    "name": "zeros@70",
-    "type": "zeros",
-    "attrs": {
-      "shape": [
-        1,
-        64,
-        24,
-        2
-      ],
-      "dtype": "float32"
-    },
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "out_zeros@70",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "where@71",
-    "type": "where",
+    "name": "abs@80",
+    "type": "abs",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@67",
+        "name": "out_nn.conv2d_transpose@79",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_nn.conv2d_transpose@69",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_zeros@70",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
@@ -3637,13 +4027,13 @@
     ],
     "outputs": [
       {
-        "name": "out_where@71",
+        "name": "out_abs@80",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3653,110 +4043,24 @@
     ]
   },
   {
-    "name": "reshape@72",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "v4_conv_0_scale",
-        "var_type": "parameter",
-        "shape": [
-          64
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@72",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "multiply@73",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@71",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@72",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@73",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@74",
-    "type": "sum",
+    "name": "max@81",
+    "type": "max",
     "attrs": {
       "axis": [
         1
       ],
-      "keepdims": 0,
-      "exclude": 1
+      "keepdims": 1,
+      "exclude": 0
     },
     "inputs": [
       {
-        "name": "out_multiply@73",
+        "name": "out_abs@80",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
@@ -3764,48 +4068,13 @@
     ],
     "outputs": [
       {
-        "name": "out_sum@74",
-        "var_type": "activation",
-        "shape": [
-          64
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 0,
-          "output_info": "v4_conv_0_bias"
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@75",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "out_nn.mcuconv2d@12",
+        "name": "out_max@81",
         "var_type": "activation",
         "shape": [
           1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "int32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@75",
-        "var_type": "activation",
-        "shape": [
           1,
-          64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": {
@@ -3815,70 +4084,24 @@
     ]
   },
   {
-    "name": "greater_equal@76",
-    "type": "greater_equal",
+    "name": "divide@82",
+    "type": "divide",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_cast@75",
+        "name": "out_max@81",
         "var_type": "activation",
         "shape": [
           1,
-          64,
-          24,
-          2
+          1,
+          25,
+          5
         ],
         "dtype": "float32",
         "meta": null
       },
       {
-        "name": "greater_equal@76-constant",
-        "var_type": "constant",
-        "shape": [
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "data": -128.0
-        }
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_greater_equal@76",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "less_equal@77",
-    "type": "less_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_cast@75",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "less_equal@77-constant",
+        "name": "divide@82-constant",
         "var_type": "constant",
         "shape": [
           1
@@ -3891,13 +4114,838 @@
     ],
     "outputs": [
       {
-        "name": "out_less_equal@77",
+        "name": "out_divide@82",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@83",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_nn.conv2d_transpose@79",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@82",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@83",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@84",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@83",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "float32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@84",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "zeros@85",
+    "type": "zeros",
+    "attrs": {
+      "shape": [
+        1,
+        64,
+        25,
+        5
+      ],
+      "dtype": "int8"
+    },
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "out_zeros@85",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "where@86",
+    "type": "where",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_multiply@77",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "bool",
+        "meta": null
+      },
+      {
+        "name": "out_cast@84",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
+      {
+        "name": "out_zeros@85",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_where@86",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@87",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int32"
+    },
+    "inputs": [
+      {
+        "name": "out_where@86",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@87",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "sum@88",
+    "type": "sum",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 0,
+      "exclude": 1
+    },
+    "inputs": [
+      {
+        "name": "out_cast@87",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_sum@88",
+        "var_type": "activation",
+        "shape": [
+          64
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 0,
+          "output_info": "v4_conv_0_bias"
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@89",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_nn.mcutruncate@13",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@89",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "tile@90",
+    "type": "tile",
+    "attrs": {
+      "reps": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_where@86",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_tile@90",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@91",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        -1,
+        1,
+        0,
+        0
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_tile@90",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@91",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "nn.conv2d@92",
+    "type": "nn.conv2d",
+    "attrs": {
+      "strides": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 64,
+      "channels": null,
+      "kernel_size": null,
+      "data_layout": "NCHW",
+      "kernel_layout": "OIHW",
+      "out_layout": "",
+      "out_dtype": "int32"
+    },
+    "inputs": [
+      {
+        "name": "out_reshape@89",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
+      {
+        "name": "out_reshape@91",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_nn.conv2d@92",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@93",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        1,
+        1,
+        64,
+        3,
+        3
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_nn.conv2d@92",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@93",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "sum@94",
+    "type": "sum",
+    "attrs": {
+      "axis": [
+        0
+      ],
+      "keepdims": 0,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_reshape@93",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_sum@94",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "transpose@95",
+    "type": "transpose",
+    "attrs": {
+      "axes": [
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_sum@94",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_transpose@95",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "abs@96",
+    "type": "abs",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@95",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_abs@96",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "max@97",
+    "type": "max",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 1,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_abs@96",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_max@97",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@98",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_max@97",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "divide@98-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@98",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@99",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@95",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@98",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@99",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@100",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@99",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@100",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 0,
+          "output_info": "v4_conv_0_weight"
+        }
+      }
+    ]
+  },
+  {
+    "name": "greater_equal@101",
+    "type": "greater_equal",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_nn.mcuconv2d@12",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "greater_equal@101-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": -128
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_greater_equal@101",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -3907,30 +4955,76 @@
     ]
   },
   {
-    "name": "multiply@78",
-    "type": "multiply",
+    "name": "less_equal@102",
+    "type": "less_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_greater_equal@76",
+        "name": "out_nn.mcuconv2d@12",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "less_equal@102-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_less_equal@102",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "bool",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "multiply@103",
+    "type": "multiply",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_greater_equal@101",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_less_equal@77",
+        "name": "out_less_equal@102",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
@@ -3938,13 +5032,13 @@
     ],
     "outputs": [
       {
-        "name": "out_multiply@78",
+        "name": "out_multiply@103",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -3954,12 +5048,51 @@
     ]
   },
   {
-    "name": "cast@79",
-    "type": "cast",
+    "name": "nn.conv2d_transpose@104",
+    "type": "nn.conv2d_transpose",
     "attrs": {
-      "dtype": "float32"
+      "channels": 64,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "strides": [
+        1,
+        1
+      ],
+      "output_padding": [
+        0,
+        0
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 64,
+      "data_layout": "NCHW",
+      "kernel_layout": "IOHW",
+      "out_layout": "",
+      "out_dtype": "int32"
     },
     "inputs": [
+      {
+        "name": "out_where@86",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
       {
         "name": "v4_conv_0_weight",
         "var_type": "parameter",
@@ -3975,15 +5108,15 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@79",
+        "name": "out_nn.conv2d_transpose@104",
         "var_type": "activation",
         "shape": [
-          64,
           1,
-          3,
-          3
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -3991,75 +5124,34 @@
     ]
   },
   {
-    "name": "nn.conv2d_transpose@80",
-    "type": "nn.conv2d_transpose",
-    "attrs": {
-      "channels": 64,
-      "kernel_size": [
-        3,
-        3
-      ],
-      "strides": [
-        1,
-        1
-      ],
-      "output_padding": [
-        0,
-        0
-      ],
-      "padding": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 64,
-      "data_layout": "NCHW",
-      "kernel_layout": "IOHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
+    "name": "abs@105",
+    "type": "abs",
+    "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@73",
+        "name": "out_nn.conv2d_transpose@104",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_cast@79",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_nn.conv2d_transpose@80",
+        "name": "out_abs@105",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4067,29 +5159,200 @@
     ]
   },
   {
-    "name": "zeros@81",
+    "name": "max@106",
+    "type": "max",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 1,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_abs@105",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_max@106",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@107",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_max@106",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "divide@107-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@107",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@108",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_nn.conv2d_transpose@104",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@107",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@108",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@109",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@108",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@109",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "zeros@110",
     "type": "zeros",
     "attrs": {
       "shape": [
         1,
         64,
-        24,
-        2
+        25,
+        5
       ],
-      "dtype": "float32"
+      "dtype": "int8"
     },
     "inputs": [],
     "outputs": [
       {
-        "name": "out_zeros@81",
+        "name": "out_zeros@110",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": {
           "children": 1
         }
@@ -4097,58 +5360,58 @@
     ]
   },
   {
-    "name": "where@82",
+    "name": "where@111",
     "type": "where",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@78",
+        "name": "out_multiply@103",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_nn.conv2d_transpose@80",
+        "name": "out_cast@109",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": null
       },
       {
-        "name": "out_zeros@81",
+        "name": "out_zeros@110",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_where@82",
+        "name": "out_where@111",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": {
           "children": 1
         }
@@ -4156,38 +5419,36 @@
     ]
   },
   {
-    "name": "reshape@83",
-    "type": "reshape",
+    "name": "cast@112",
+    "type": "cast",
     "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
+      "dtype": "int32"
     },
     "inputs": [
       {
-        "name": "v3_conv_1_scale",
-        "var_type": "parameter",
+        "name": "out_where@111",
+        "var_type": "activation",
         "shape": [
-          64
+          1,
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_reshape@83",
+        "name": "out_cast@112",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          1,
-          1
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4195,54 +5456,7 @@
     ]
   },
   {
-    "name": "multiply@84",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@82",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@83",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@84",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@85",
+    "name": "sum@113",
     "type": "sum",
     "attrs": {
       "axis": [
@@ -4253,26 +5467,26 @@
     },
     "inputs": [
       {
-        "name": "out_multiply@84",
+        "name": "out_cast@112",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_sum@85",
+        "name": "out_sum@113",
         "var_type": "activation",
         "shape": [
           64
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 0,
           "output_info": "v3_conv_1_bias"
@@ -4281,20 +5495,221 @@
     ]
   },
   {
-    "name": "cast@86",
-    "type": "cast",
+    "name": "reshape@114",
+    "type": "reshape",
     "attrs": {
-      "dtype": "float32"
+      "newshape": [
+        1,
+        -1,
+        0,
+        0
+      ]
     },
     "inputs": [
       {
-        "name": "out_nn.mcuconv2d@10",
+        "name": "out_nn.mcutruncate@11",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@114",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "tile@115",
+    "type": "tile",
+    "attrs": {
+      "reps": [
+        1,
+        64,
+        1,
+        1
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_where@111",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_tile@115",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@116",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        -1,
+        1,
+        0,
+        0
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_tile@115",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@116",
+        "var_type": "activation",
+        "shape": [
+          4096,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "nn.conv2d@117",
+    "type": "nn.conv2d",
+    "attrs": {
+      "strides": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 64,
+      "channels": null,
+      "kernel_size": null,
+      "data_layout": "NCHW",
+      "kernel_layout": "OIHW",
+      "out_layout": "",
+      "out_dtype": "int32"
+    },
+    "inputs": [
+      {
+        "name": "out_reshape@114",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
+      {
+        "name": "out_reshape@116",
+        "var_type": "activation",
+        "shape": [
+          4096,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_nn.conv2d@117",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@118",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        1,
+        64,
+        64,
+        1,
+        1
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_nn.conv2d@117",
+        "var_type": "activation",
+        "shape": [
+          1,
+          4096,
+          1,
+          1
         ],
         "dtype": "int32",
         "meta": null
@@ -4302,15 +5717,16 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@86",
+        "name": "out_reshape@118",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          64,
+          1,
+          1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4318,43 +5734,334 @@
     ]
   },
   {
-    "name": "greater_equal@87",
+    "name": "sum@119",
+    "type": "sum",
+    "attrs": {
+      "axis": [
+        0
+      ],
+      "keepdims": 0,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_reshape@118",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_sum@119",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "transpose@120",
+    "type": "transpose",
+    "attrs": {
+      "axes": [
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_sum@119",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_transpose@120",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "abs@121",
+    "type": "abs",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@120",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_abs@121",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "max@122",
+    "type": "max",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 1,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_abs@121",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_max@122",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@123",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_max@122",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "divide@123-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@123",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@124",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@120",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@123",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@124",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@125",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@124",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@125",
+        "var_type": "activation",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 0,
+          "output_info": "v3_conv_1_weight"
+        }
+      }
+    ]
+  },
+  {
+    "name": "greater_equal@126",
     "type": "greater_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_cast@86",
+        "name": "out_nn.mcuconv2d@10",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       },
       {
-        "name": "greater_equal@87-constant",
+        "name": "greater_equal@126-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
-          "data": -128.0
+          "data": -128
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_greater_equal@87",
+        "name": "out_greater_equal@126",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -4364,43 +6071,43 @@
     ]
   },
   {
-    "name": "less_equal@88",
+    "name": "less_equal@127",
     "type": "less_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_cast@86",
+        "name": "out_nn.mcuconv2d@10",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       },
       {
-        "name": "less_equal@88-constant",
+        "name": "less_equal@127-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
-          "data": 127.0
+          "data": 127
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_less_equal@88",
+        "name": "out_less_equal@127",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -4410,30 +6117,30 @@
     ]
   },
   {
-    "name": "multiply@89",
+    "name": "multiply@128",
     "type": "multiply",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_greater_equal@87",
+        "name": "out_greater_equal@126",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_less_equal@88",
+        "name": "out_less_equal@127",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
@@ -4441,13 +6148,13 @@
     ],
     "outputs": [
       {
-        "name": "out_multiply@89",
+        "name": "out_multiply@128",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -4457,12 +6164,51 @@
     ]
   },
   {
-    "name": "cast@90",
-    "type": "cast",
+    "name": "nn.conv2d_transpose@129",
+    "type": "nn.conv2d_transpose",
     "attrs": {
-      "dtype": "float32"
+      "channels": 64,
+      "kernel_size": [
+        1,
+        1
+      ],
+      "strides": [
+        1,
+        1
+      ],
+      "output_padding": [
+        0,
+        0
+      ],
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "data_layout": "NCHW",
+      "kernel_layout": "IOHW",
+      "out_layout": "",
+      "out_dtype": "int32"
     },
     "inputs": [
+      {
+        "name": "out_where@111",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
       {
         "name": "v3_conv_1_weight",
         "var_type": "parameter",
@@ -4478,15 +6224,15 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@90",
+        "name": "out_nn.conv2d_transpose@129",
         "var_type": "activation",
         "shape": [
-          64,
-          64,
           1,
-          1
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4494,75 +6240,34 @@
     ]
   },
   {
-    "name": "nn.conv2d_transpose@91",
-    "type": "nn.conv2d_transpose",
-    "attrs": {
-      "channels": 64,
-      "kernel_size": [
-        1,
-        1
-      ],
-      "strides": [
-        1,
-        1
-      ],
-      "output_padding": [
-        0,
-        0
-      ],
-      "padding": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 1,
-      "data_layout": "NCHW",
-      "kernel_layout": "IOHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
+    "name": "abs@130",
+    "type": "abs",
+    "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@84",
+        "name": "out_nn.conv2d_transpose@129",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_cast@90",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_nn.conv2d_transpose@91",
+        "name": "out_abs@130",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4570,29 +6275,200 @@
     ]
   },
   {
-    "name": "zeros@92",
+    "name": "max@131",
+    "type": "max",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 1,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_abs@130",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_max@131",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@132",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_max@131",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "divide@132-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@132",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@133",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_nn.conv2d_transpose@129",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@132",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@133",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@134",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@133",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@134",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "zeros@135",
     "type": "zeros",
     "attrs": {
       "shape": [
         1,
         64,
-        24,
-        2
+        25,
+        5
       ],
-      "dtype": "float32"
+      "dtype": "int8"
     },
     "inputs": [],
     "outputs": [
       {
-        "name": "out_zeros@92",
+        "name": "out_zeros@135",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": {
           "children": 1
         }
@@ -4600,58 +6476,58 @@
     ]
   },
   {
-    "name": "where@93",
+    "name": "where@136",
     "type": "where",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@89",
+        "name": "out_multiply@128",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_nn.conv2d_transpose@91",
+        "name": "out_cast@134",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": null
       },
       {
-        "name": "out_zeros@92",
+        "name": "out_zeros@135",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_where@93",
+        "name": "out_where@136",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": {
           "children": 1
         }
@@ -4659,38 +6535,36 @@
     ]
   },
   {
-    "name": "reshape@94",
-    "type": "reshape",
+    "name": "cast@137",
+    "type": "cast",
     "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
+      "dtype": "int32"
     },
     "inputs": [
       {
-        "name": "v3_conv_0_scale",
-        "var_type": "parameter",
+        "name": "out_where@136",
+        "var_type": "activation",
         "shape": [
-          64
+          1,
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int8",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_reshape@94",
+        "name": "out_cast@137",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          1,
-          1
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4698,54 +6572,7 @@
     ]
   },
   {
-    "name": "multiply@95",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@93",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@94",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@95",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@96",
+    "name": "sum@138",
     "type": "sum",
     "attrs": {
       "axis": [
@@ -4756,26 +6583,26 @@
     },
     "inputs": [
       {
-        "name": "out_multiply@95",
+        "name": "out_cast@137",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_sum@96",
+        "name": "out_sum@138",
         "var_type": "activation",
         "shape": [
           64
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 0,
           "output_info": "v3_conv_0_bias"
@@ -4784,20 +6611,221 @@
     ]
   },
   {
-    "name": "cast@97",
-    "type": "cast",
+    "name": "reshape@139",
+    "type": "reshape",
     "attrs": {
-      "dtype": "float32"
+      "newshape": [
+        1,
+        -1,
+        0,
+        0
+      ]
     },
     "inputs": [
       {
-        "name": "out_nn.mcuconv2d@8",
+        "name": "out_nn.mcutruncate@9",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@139",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "tile@140",
+    "type": "tile",
+    "attrs": {
+      "reps": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_where@136",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_tile@140",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@141",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        -1,
+        1,
+        0,
+        0
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_tile@140",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_reshape@141",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "nn.conv2d@142",
+    "type": "nn.conv2d",
+    "attrs": {
+      "strides": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 64,
+      "channels": null,
+      "kernel_size": null,
+      "data_layout": "NCHW",
+      "kernel_layout": "OIHW",
+      "out_layout": "",
+      "out_dtype": "int32"
+    },
+    "inputs": [
+      {
+        "name": "out_reshape@139",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
+      {
+        "name": "out_reshape@141",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_nn.conv2d@142",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "reshape@143",
+    "type": "reshape",
+    "attrs": {
+      "newshape": [
+        1,
+        1,
+        64,
+        3,
+        3
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_nn.conv2d@142",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
         ],
         "dtype": "int32",
         "meta": null
@@ -4805,15 +6833,16 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@97",
+        "name": "out_reshape@143",
         "var_type": "activation",
         "shape": [
           1,
+          1,
           64,
-          24,
-          2
+          3,
+          3
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4821,43 +6850,334 @@
     ]
   },
   {
-    "name": "greater_equal@98",
+    "name": "sum@144",
+    "type": "sum",
+    "attrs": {
+      "axis": [
+        0
+      ],
+      "keepdims": 0,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_reshape@143",
+        "var_type": "activation",
+        "shape": [
+          1,
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_sum@144",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "transpose@145",
+    "type": "transpose",
+    "attrs": {
+      "axes": [
+        1,
+        0,
+        2,
+        3
+      ]
+    },
+    "inputs": [
+      {
+        "name": "out_sum@144",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_transpose@145",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "abs@146",
+    "type": "abs",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@145",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_abs@146",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "max@147",
+    "type": "max",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 1,
+      "exclude": 0
+    },
+    "inputs": [
+      {
+        "name": "out_abs@146",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_max@147",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@148",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_max@147",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "divide@148-constant",
+        "var_type": "constant",
+        "shape": [
+          1
+        ],
+        "dtype": "int32",
+        "meta": {
+          "data": 127
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@148",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "divide@149",
+    "type": "divide",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_transpose@145",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      },
+      {
+        "name": "out_divide@148",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_divide@149",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@150",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int8"
+    },
+    "inputs": [
+      {
+        "name": "out_divide@149",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@150",
+        "var_type": "activation",
+        "shape": [
+          64,
+          1,
+          3,
+          3
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 0,
+          "output_info": "v3_conv_0_weight"
+        }
+      }
+    ]
+  },
+  {
+    "name": "greater_equal@151",
     "type": "greater_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_cast@97",
+        "name": "out_nn.mcuconv2d@8",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       },
       {
-        "name": "greater_equal@98-constant",
+        "name": "greater_equal@151-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
-          "data": -128.0
+          "data": -128
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_greater_equal@98",
+        "name": "out_greater_equal@151",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -4867,43 +7187,43 @@
     ]
   },
   {
-    "name": "less_equal@99",
+    "name": "less_equal@152",
     "type": "less_equal",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_cast@97",
+        "name": "out_nn.mcuconv2d@8",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       },
       {
-        "name": "less_equal@99-constant",
+        "name": "less_equal@152-constant",
         "var_type": "constant",
         "shape": [
           1
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
-          "data": 127.0
+          "data": 127
         }
       }
     ],
     "outputs": [
       {
-        "name": "out_less_equal@99",
+        "name": "out_less_equal@152",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -4913,30 +7233,30 @@
     ]
   },
   {
-    "name": "multiply@100",
+    "name": "multiply@153",
     "type": "multiply",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_greater_equal@98",
+        "name": "out_greater_equal@151",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
       },
       {
-        "name": "out_less_equal@99",
+        "name": "out_less_equal@152",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": null
@@ -4944,13 +7264,13 @@
     ],
     "outputs": [
       {
-        "name": "out_multiply@100",
+        "name": "out_multiply@153",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "bool",
         "meta": {
@@ -4960,12 +7280,51 @@
     ]
   },
   {
-    "name": "cast@101",
-    "type": "cast",
+    "name": "nn.conv2d_transpose@154",
+    "type": "nn.conv2d_transpose",
     "attrs": {
-      "dtype": "float32"
+      "channels": 64,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "strides": [
+        1,
+        1
+      ],
+      "output_padding": [
+        0,
+        0
+      ],
+      "padding": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 64,
+      "data_layout": "NCHW",
+      "kernel_layout": "IOHW",
+      "out_layout": "",
+      "out_dtype": "int32"
     },
     "inputs": [
+      {
+        "name": "out_where@136",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
       {
         "name": "v3_conv_0_weight",
         "var_type": "parameter",
@@ -4981,15 +7340,15 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@101",
+        "name": "out_nn.conv2d_transpose@154",
         "var_type": "activation",
         "shape": [
-          64,
           1,
-          3,
-          3
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -4997,389 +7356,18 @@
     ]
   },
   {
-    "name": "nn.conv2d_transpose@102",
-    "type": "nn.conv2d_transpose",
-    "attrs": {
-      "channels": 64,
-      "kernel_size": [
-        3,
-        3
-      ],
-      "strides": [
-        1,
-        1
-      ],
-      "output_padding": [
-        0,
-        0
-      ],
-      "padding": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 64,
-      "data_layout": "NCHW",
-      "kernel_layout": "IOHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
-    "inputs": [
-      {
-        "name": "out_multiply@95",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_cast@101",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_nn.conv2d_transpose@102",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "zeros@103",
-    "type": "zeros",
-    "attrs": {
-      "shape": [
-        1,
-        64,
-        24,
-        2
-      ],
-      "dtype": "float32"
-    },
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "out_zeros@103",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "where@104",
-    "type": "where",
+    "name": "abs@155",
+    "type": "abs",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_multiply@100",
+        "name": "out_nn.conv2d_transpose@154",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_nn.conv2d_transpose@102",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_zeros@103",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_where@104",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@105",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "v2_conv_1_scale",
-        "var_type": "parameter",
-        "shape": [
-          64
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@105",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "multiply@106",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@104",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@105",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@106",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@107",
-    "type": "sum",
-    "attrs": {
-      "axis": [
-        1
-      ],
-      "keepdims": 0,
-      "exclude": 1
-    },
-    "inputs": [
-      {
-        "name": "out_multiply@106",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_sum@107",
-        "var_type": "activation",
-        "shape": [
-          64
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 0,
-          "output_info": "v2_conv_1_bias"
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@108",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "out_nn.mcutruncate@3",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "int8",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@108",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@109",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        -1,
-        0,
-        0
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_cast@108",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@109",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@110",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "out_nn.mcuconv2d@4",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
@@ -5387,191 +7375,15 @@
     ],
     "outputs": [
       {
-        "name": "out_cast@110",
+        "name": "out_abs@155",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "greater_equal@111",
-    "type": "greater_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_cast@110",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "greater_equal@111-constant",
-        "var_type": "constant",
-        "shape": [
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "data": -128.0
-        }
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_greater_equal@111",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "less_equal@112",
-    "type": "less_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_cast@110",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "less_equal@112-constant",
-        "var_type": "constant",
-        "shape": [
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "data": 127.0
-        }
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_less_equal@112",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "multiply@113",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_greater_equal@111",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_less_equal@112",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@113",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@114",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "out_nn.mcuconv2d@6",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
+          25,
+          5
         ],
         "dtype": "int32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@114",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
         "meta": {
           "children": 1
         }
@@ -5579,953 +7391,40 @@
     ]
   },
   {
-    "name": "greater_equal@115",
-    "type": "greater_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_cast@114",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "greater_equal@115-constant",
-        "var_type": "constant",
-        "shape": [
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "data": -128.0
-        }
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_greater_equal@115",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "less_equal@116",
-    "type": "less_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_cast@114",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "less_equal@116-constant",
-        "var_type": "constant",
-        "shape": [
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "data": 127.0
-        }
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_less_equal@116",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "multiply@117",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_greater_equal@115",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_less_equal@116",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@117",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@118",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "v2_conv_1_weight",
-        "var_type": "parameter",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "int8",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@118",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "nn.conv2d_transpose@119",
-    "type": "nn.conv2d_transpose",
-    "attrs": {
-      "channels": 64,
-      "kernel_size": [
-        1,
-        1
-      ],
-      "strides": [
-        1,
-        1
-      ],
-      "output_padding": [
-        0,
-        0
-      ],
-      "padding": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 1,
-      "data_layout": "NCHW",
-      "kernel_layout": "IOHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
-    "inputs": [
-      {
-        "name": "out_multiply@106",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_cast@118",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_nn.conv2d_transpose@119",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "zeros@120",
-    "type": "zeros",
-    "attrs": {
-      "shape": [
-        1,
-        64,
-        24,
-        2
-      ],
-      "dtype": "float32"
-    },
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "out_zeros@120",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "where@121",
-    "type": "where",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_multiply@117",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_nn.conv2d_transpose@119",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_zeros@120",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_where@121",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@122",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "v2_conv_0_scale",
-        "var_type": "parameter",
-        "shape": [
-          64
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@122",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "multiply@123",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@121",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@122",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@123",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@124",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "v2_conv_0_weight",
-        "var_type": "parameter",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "int8",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@124",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "nn.conv2d_transpose@125",
-    "type": "nn.conv2d_transpose",
-    "attrs": {
-      "channels": 64,
-      "kernel_size": [
-        3,
-        3
-      ],
-      "strides": [
-        1,
-        1
-      ],
-      "output_padding": [
-        0,
-        0
-      ],
-      "padding": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 64,
-      "data_layout": "NCHW",
-      "kernel_layout": "IOHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
-    "inputs": [
-      {
-        "name": "out_multiply@123",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_cast@124",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_nn.conv2d_transpose@125",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "zeros@126",
-    "type": "zeros",
-    "attrs": {
-      "shape": [
-        1,
-        64,
-        24,
-        2
-      ],
-      "dtype": "float32"
-    },
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "out_zeros@126",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "where@127",
-    "type": "where",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_multiply@113",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_nn.conv2d_transpose@125",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_zeros@126",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_where@127",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@128",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        -1,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "v1_conv_1_scale",
-        "var_type": "parameter",
-        "shape": [
-          64
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@128",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "multiply@129",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_where@127",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@128",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@129",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "tile@130",
-    "type": "tile",
-    "attrs": {
-      "reps": [
-        1,
-        64,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_multiply@129",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_tile@130",
-        "var_type": "activation",
-        "shape": [
-          1,
-          4096,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@131",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        -1,
-        1,
-        0,
-        0
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_tile@130",
-        "var_type": "activation",
-        "shape": [
-          1,
-          4096,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@131",
-        "var_type": "activation",
-        "shape": [
-          4096,
-          1,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "nn.conv2d@132",
-    "type": "nn.conv2d",
-    "attrs": {
-      "strides": [
-        1,
-        1
-      ],
-      "padding": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 64,
-      "channels": null,
-      "kernel_size": null,
-      "data_layout": "NCHW",
-      "kernel_layout": "OIHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
-    "inputs": [
-      {
-        "name": "out_reshape@109",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@131",
-        "var_type": "activation",
-        "shape": [
-          4096,
-          1,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_nn.conv2d@132",
-        "var_type": "activation",
-        "shape": [
-          1,
-          4096,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@133",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        64,
-        64,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_nn.conv2d@132",
-        "var_type": "activation",
-        "shape": [
-          1,
-          4096,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@133",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@134",
-    "type": "sum",
+    "name": "max@156",
+    "type": "max",
     "attrs": {
       "axis": [
-        0
+        1
       ],
-      "keepdims": 0,
+      "keepdims": 1,
       "exclude": 0
     },
     "inputs": [
       {
-        "name": "out_reshape@133",
+        "name": "out_abs@155",
         "var_type": "activation",
         "shape": [
           1,
           64,
-          64,
-          1,
-          1
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_sum@134",
+        "name": "out_max@156",
         "var_type": "activation",
         "shape": [
-          64,
-          64,
           1,
-          1
+          1,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -6533,192 +7432,24 @@
     ]
   },
   {
-    "name": "transpose@135",
-    "type": "transpose",
-    "attrs": {
-      "axes": [
-        1,
-        0,
-        2,
-        3
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_sum@134",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_transpose@135",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 0,
-          "output_info": "v1_conv_1_weight"
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@136",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        -1,
-        0,
-        0
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_nn.mcutruncate@1",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "int8",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@136",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "int8",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@137",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "out_reshape@136",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "int8",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@137",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "greater_equal@138",
-    "type": "greater_equal",
+    "name": "divide@157",
+    "type": "divide",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_nn.mcuconv2d@2",
+        "name": "out_max@156",
         "var_type": "activation",
         "shape": [
           1,
-          64,
-          24,
-          2
+          1,
+          25,
+          5
         ],
         "dtype": "int32",
         "meta": null
       },
       {
-        "name": "greater_equal@138-constant",
-        "var_type": "constant",
-        "shape": [
-          1
-        ],
-        "dtype": "int32",
-        "meta": {
-          "data": -128
-        }
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_greater_equal@138",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "less_equal@139",
-    "type": "less_equal",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_nn.mcuconv2d@2",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "int32",
-        "meta": null
-      },
-      {
-        "name": "less_equal@139-constant",
+        "name": "divide@157-constant",
         "var_type": "constant",
         "shape": [
           1
@@ -6731,15 +7462,15 @@
     ],
     "outputs": [
       {
-        "name": "out_less_equal@139",
+        "name": "out_divide@157",
         "var_type": "activation",
         "shape": [
           1,
-          64,
-          24,
-          2
+          1,
+          25,
+          5
         ],
-        "dtype": "bool",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -6747,651 +7478,46 @@
     ]
   },
   {
-    "name": "multiply@140",
-    "type": "multiply",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_greater_equal@138",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_less_equal@139",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_multiply@140",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@141",
-    "type": "cast",
-    "attrs": {
-      "dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "v1_conv_1_weight",
-        "var_type": "parameter",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "int8",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_cast@141",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "nn.conv2d_transpose@142",
-    "type": "nn.conv2d_transpose",
-    "attrs": {
-      "channels": 64,
-      "kernel_size": [
-        1,
-        1
-      ],
-      "strides": [
-        1,
-        1
-      ],
-      "output_padding": [
-        0,
-        0
-      ],
-      "padding": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 1,
-      "data_layout": "NCHW",
-      "kernel_layout": "IOHW",
-      "out_layout": "",
-      "out_dtype": ""
-    },
-    "inputs": [
-      {
-        "name": "out_multiply@129",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_cast@141",
-        "var_type": "activation",
-        "shape": [
-          64,
-          64,
-          1,
-          1
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_nn.conv2d_transpose@142",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "zeros@143",
-    "type": "zeros",
-    "attrs": {
-      "shape": [
-        1,
-        64,
-        24,
-        2
-      ],
-      "dtype": "float32"
-    },
-    "inputs": [],
-    "outputs": [
-      {
-        "name": "out_zeros@143",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "where@144",
-    "type": "where",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_multiply@140",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "bool",
-        "meta": null
-      },
-      {
-        "name": "out_nn.conv2d_transpose@142",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_zeros@143",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_where@144",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "tile@145",
-    "type": "tile",
-    "attrs": {
-      "reps": [
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_where@144",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_tile@145",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@146",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        -1,
-        1,
-        0,
-        0
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_tile@145",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@146",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "nn.conv2d@147",
-    "type": "nn.conv2d",
-    "attrs": {
-      "strides": [
-        1,
-        1
-      ],
-      "padding": [
-        1,
-        1,
-        1,
-        1
-      ],
-      "dilation": [
-        1,
-        1
-      ],
-      "groups": 64,
-      "channels": null,
-      "kernel_size": null,
-      "data_layout": "NCHW",
-      "kernel_layout": "OIHW",
-      "out_layout": "",
-      "out_dtype": "float32"
-    },
-    "inputs": [
-      {
-        "name": "out_cast@137",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_reshape@146",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          24,
-          2
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_nn.conv2d@147",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "reshape@148",
-    "type": "reshape",
-    "attrs": {
-      "newshape": [
-        1,
-        1,
-        64,
-        3,
-        3
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_nn.conv2d@147",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_reshape@148",
-        "var_type": "activation",
-        "shape": [
-          1,
-          1,
-          64,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "sum@149",
-    "type": "sum",
-    "attrs": {
-      "axis": [
-        0
-      ],
-      "keepdims": 0,
-      "exclude": 0
-    },
-    "inputs": [
-      {
-        "name": "out_reshape@148",
-        "var_type": "activation",
-        "shape": [
-          1,
-          1,
-          64,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_sum@149",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "transpose@150",
-    "type": "transpose",
-    "attrs": {
-      "axes": [
-        1,
-        0,
-        2,
-        3
-      ]
-    },
-    "inputs": [
-      {
-        "name": "out_sum@149",
-        "var_type": "activation",
-        "shape": [
-          1,
-          64,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_transpose@150",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "abs@151",
-    "type": "abs",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_transpose@150",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_abs@151",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "max@152",
-    "type": "max",
-    "attrs": {
-      "axis": [
-        1
-      ],
-      "keepdims": 1,
-      "exclude": 0
-    },
-    "inputs": [
-      {
-        "name": "out_abs@151",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_max@152",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "divide@153",
+    "name": "divide@158",
     "type": "divide",
     "attrs": {},
     "inputs": [
       {
-        "name": "out_max@152",
+        "name": "out_nn.conv2d_transpose@154",
         "var_type": "activation",
         "shape": [
-          64,
           1,
-          3,
-          3
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       },
       {
-        "name": "divide@153-constant",
-        "var_type": "constant",
+        "name": "out_divide@157",
+        "var_type": "activation",
         "shape": [
-          1
+          1,
+          1,
+          25,
+          5
         ],
-        "dtype": "float32",
-        "meta": {
-          "data": 127.0
-        }
+        "dtype": "int32",
+        "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_divide@153",
+        "name": "out_divide@158",
         "var_type": "activation",
         "shape": [
-          64,
           1,
-          3,
-          3
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": {
           "children": 1
         }
@@ -7399,86 +7525,203 @@
     ]
   },
   {
-    "name": "divide@154",
-    "type": "divide",
-    "attrs": {},
-    "inputs": [
-      {
-        "name": "out_transpose@150",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      },
-      {
-        "name": "out_divide@153",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": null
-      }
-    ],
-    "outputs": [
-      {
-        "name": "out_divide@154",
-        "var_type": "activation",
-        "shape": [
-          64,
-          1,
-          3,
-          3
-        ],
-        "dtype": "float32",
-        "meta": {
-          "children": 1
-        }
-      }
-    ]
-  },
-  {
-    "name": "cast@155",
+    "name": "cast@159",
     "type": "cast",
     "attrs": {
       "dtype": "int8"
     },
     "inputs": [
       {
-        "name": "out_divide@154",
+        "name": "out_divide@158",
         "var_type": "activation",
         "shape": [
-          64,
           1,
-          3,
-          3
+          64,
+          25,
+          5
         ],
-        "dtype": "float32",
+        "dtype": "int32",
         "meta": null
       }
     ],
     "outputs": [
       {
-        "name": "out_cast@155",
+        "name": "out_cast@159",
         "var_type": "activation",
         "shape": [
-          64,
           1,
-          3,
-          3
+          64,
+          25,
+          5
         ],
         "dtype": "int8",
         "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "zeros@160",
+    "type": "zeros",
+    "attrs": {
+      "shape": [
+        1,
+        64,
+        25,
+        5
+      ],
+      "dtype": "int8"
+    },
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "out_zeros@160",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "where@161",
+    "type": "where",
+    "attrs": {},
+    "inputs": [
+      {
+        "name": "out_multiply@153",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "bool",
+        "meta": null
+      },
+      {
+        "name": "out_cast@159",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      },
+      {
+        "name": "out_zeros@160",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_where@161",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "cast@162",
+    "type": "cast",
+    "attrs": {
+      "dtype": "int32"
+    },
+    "inputs": [
+      {
+        "name": "out_where@161",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int8",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_cast@162",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": {
+          "children": 1
+        }
+      }
+    ]
+  },
+  {
+    "name": "sum@163",
+    "type": "sum",
+    "attrs": {
+      "axis": [
+        1
+      ],
+      "keepdims": 0,
+      "exclude": 1
+    },
+    "inputs": [
+      {
+        "name": "out_cast@162",
+        "var_type": "activation",
+        "shape": [
+          1,
+          64,
+          25,
+          5
+        ],
+        "dtype": "int32",
+        "meta": null
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out_sum@163",
+        "var_type": "activation",
+        "shape": [
+          64
+        ],
+        "dtype": "int32",
+        "meta": {
           "children": 0,
-          "output_info": "v1_conv_0_weight"
+          "output_info": "v2_conv_1_bias"
         }
       }
     ]

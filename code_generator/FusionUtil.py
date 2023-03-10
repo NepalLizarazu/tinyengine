@@ -571,6 +571,7 @@ def _findTransposeMultiplyAbsMaxDivide(model, transpose_op):
     cast_op = None
 
     ops = _findNextOpListTakeInputName(model, transpose_op["outputs"][0]["name"])
+    #TODO must be checked for errors (Not Implemented)
 
     if len(ops) == 2:
         if ops[0]["type"] == "abs" and ops[1]["type"] in ["multiply", "cast"]:

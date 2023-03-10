@@ -255,8 +255,9 @@ class Conv2d(basicOperator):
             elif kernel_h == 3 and params["stride_h"] == 1 and params["padding"] == 1:
                 function_name = "convolve_s8_kernel3_stride1_pad1"
             else:
+                print (params)
                 raise NotImplementedError
-
+            print (function_name)
             if fp_requantize and not ("is_patch" in params and params["is_patch"] and kernel_h > 1):
                 function_name += "_fpreq"
 
