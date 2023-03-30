@@ -43,8 +43,7 @@ Src/main.o: ../Src/main.cpp ../Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h \
- ../Inc/camera.h ../Inc/lcd.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h ../Inc/lcd.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/profile.h \
  ../Src/testing_data/golden_data.h ../Src/testing_data/images.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/genNN.h \
@@ -52,7 +51,8 @@ Src/main.o: ../Src/main.cpp ../Inc/main.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/tinyengine_function.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/fp_requantize_op.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/codegen/Include/genInclude.h \
- ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h
+ ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h \
+ ../Inc/dummy_inputs.h
 
 ../Inc/main.h:
 
@@ -146,8 +146,6 @@ Src/main.o: ../Src/main.cpp ../Inc/main.h \
 
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_uart_ex.h:
 
-../Inc/camera.h:
-
 ../Inc/lcd.h:
 
 C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/profile.h:
@@ -167,3 +165,5 @@ C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyE
 C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/codegen/Include/genInclude.h:
 
 ../Drivers/BSP/STM32746G-Discovery/stm32746g_discovery.h:
+
+../Inc/dummy_inputs.h:

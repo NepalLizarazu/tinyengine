@@ -18,7 +18,7 @@
  * -------------------------------------------------------------------- */
 
 #include "main.h"
-#include "camera.h"
+//#include "camera.h"
 #include "lcd.h"
 #include "profile.h"
 #include "stdio.h"
@@ -33,6 +33,8 @@ extern "C" {
 
 #include "stm32746g_discovery.h"
 
+#include "dummy_inputs.h"
+
 static void SystemClock_Config(void);
 static void Error_Handler(void);
 static void CPU_CACHE_Enable(void);
@@ -41,7 +43,7 @@ static void MX_GPIO_Init(void);
 #define IMAGE_H 80
 #define IMAGE_W 80
 #define INPUT_CH 160
-#define OUTPUT_CH 2
+#define OUTPUT_CH 10
 #define IMAGES 6
 
 void SystemClock_Config(void);
@@ -76,7 +78,7 @@ void invoke_new_weights_givenimg(signed char *out_int8) {
 #define RES_W 128
 #define RES_H 120
 
-uint16_t *RGBbuf;
+//uint16_t *RGBbuf;
 #define ENABLE_TRAIN
 int main(void) {
   char buf[150];
@@ -91,18 +93,19 @@ int main(void) {
 
   BSP_PB_Init(BUTTON_KEY, BUTTON_MODE_GPIO);
 
-  lcdsetup();
+  //lcdsetup();
 
   //int camErr = initCamera();
 
   uint32_t start, end, starti, endi;
   //StartCapture();
-  signed char *input = getInput();
+  signed char *input = getInput(); // &buffer0[8000]
 
-  RGBbuf = (uint16_t *)&input[128 * 128 * 4];
+  //RGBbuf = (uint16_t *)&input[128 * 128 * 4];
   int t_mode = 0;
   while (1) {
-    starti = HAL_GetTick();
+	starti = HAL_GetTick();
+    /*
     ReadCapture();
     StartCapture();
     DecodeandProcessAndRGB(RES_W, RES_H, input, RGBbuf, 1);
@@ -124,6 +127,16 @@ int main(void) {
     }
 
     loadRGB565LCD(10, 10, RES_W, RES_W, RGBbuf, 2);
+    */
+
+    float x_scale = 1.4015748031496063;
+    //Converts one of the dummy inputs in a 1D array to input the inference
+    for (int i = 0; i < 49; i++){
+    	for (int j = 0; j < 10; j++){
+    		input[i*10+j] = (uint8_t) round(in0[i][j]/x_scale);
+    	}
+    }
+
     endi = HAL_GetTick();
 
     uint8_t button0 = BSP_PB_GetState(BUTTON_KEY) == GPIO_PIN_SET;
@@ -137,6 +150,9 @@ int main(void) {
       t_mode = 1;
     if (s[0] == '4')
       t_mode = 0;
+
+    t_mode = 0;//Hardcoded inference
+
     if (t_mode) {
       if ((button2 || button1 || s[0] == '1' || s[0] == '2')) {
         int label = 0;
@@ -168,9 +184,9 @@ int main(void) {
         end = HAL_GetTick();
         detectResponse(answer_right, 0, t_mode, p, label);
 
-        ReadCapture();
-        StartCapture();
-        DecodeandProcessAndRGB(RES_W, RES_H, input, RGBbuf, 1);
+        //ReadCapture();
+        //StartCapture();
+        //DecodeandProcessAndRGB(RES_W, RES_H, input, RGBbuf, 1);
         displaystring(showbuf, 273, 10);
         start = HAL_GetTick();
         train(label);
@@ -183,16 +199,18 @@ int main(void) {
 
       start = HAL_GetTick();
       invoke_new_weights_givenimg(out_int);
-      int person = 0;
-      if (out_int[0] > out_int[1]) {
-        person = 1;
-      } else {
-        person = 0;
+      uint8_t inf_class = 0;
+
+      for (int i = 0; i < OUTPUT_CH; i++){
+    	  if (out_int[inf_class] < out_int[i]){
+    		  inf_class = i;
+    	  }
       }
+
       end = HAL_GetTick();
       sprintf(showbuf, " Inference ");
       displaystring(showbuf, 273, 10);
-      detectResponse(person, end - starti, t_mode, 0, 0);
+      //detectResponse(person, end - starti, t_mode, 0, 0);
     }
   }
 
