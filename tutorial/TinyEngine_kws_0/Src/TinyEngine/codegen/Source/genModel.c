@@ -8,7 +8,6 @@
 #include "tinyengine_function.h"
 #include "tinyengine_function_fp.h"
 
-
 /* Variables used by all ops */
 ADD_params add_params;
 //Conv_Params conv_params;
@@ -85,6 +84,12 @@ const float v5_weight_QAS[10] = {1041585.94,1077256.6,1047029.44,1069220.4,10607
 group_pointwise_conv_fp_in1x1_out1x1_1row10col_uniweight_int8input_inplace((float*)&buffer0[0],1,1,64,weight_fp10,NULL,v5_weight,1,1,640,-FLT_MAX,FLT_MAX,(float*)sbuf,1,64, v5_weight_QAS, lr);
 }
 void invoke_inf(){
+
+kbuf[287] = 0;
+kbuf[286] = 0;
+kbuf[0] = 0;
+int tes = kbuf[0];
+int tes1 = kbuf[287];
 /* layer 0:CONV_2D */
 convolve_s8_kernel3_inputch3_stride2_pad1_fpreq(&buffer0[8000],10,49,1,(const q7_t*) weight0,bias0,scales0,-111,0,-128,127,&buffer0[0],5,25,64,sbuf,kbuf,0);
 /* layer 1:DEPTHWISE_CONV_2D */

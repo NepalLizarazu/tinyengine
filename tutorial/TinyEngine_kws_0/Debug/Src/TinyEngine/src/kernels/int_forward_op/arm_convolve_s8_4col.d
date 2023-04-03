@@ -34,7 +34,8 @@ Src/TinyEngine/src/kernels/int_forward_op/arm_convolve_s8_4col.o: \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nnfunctions.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nn_math_types.h \
  C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nn_types.h \
- C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nnsupportfunctions.h
+ C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nnsupportfunctions.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h
 
 C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_math.h:
 
@@ -105,3 +106,5 @@ C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyE
 C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nn_types.h:
 
 C:/Users/HP/Desktop/Master_Thesis/tinyengine/tutorial/TinyEngine_kws_0/Src/TinyEngine/include/arm_cmsis/arm_nnsupportfunctions.h:
+
+../Drivers/CMSIS/Include/cmsis_gcc.h:

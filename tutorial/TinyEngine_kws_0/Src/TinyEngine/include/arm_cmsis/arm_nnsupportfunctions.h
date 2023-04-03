@@ -32,6 +32,7 @@
 
 #include "arm_nn_math_types.h"
 #include "arm_nn_types.h"
+#include "cmsis_gcc.h"
 
 #ifdef __cplusplus
 extern "C" {

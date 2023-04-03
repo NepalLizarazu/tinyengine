@@ -18,7 +18,7 @@
  * -------------------------------------------------------------------- */
 
 #include "main.h"
-//#include "camera.h"
+#include "camera.h"
 #include "lcd.h"
 #include "profile.h"
 #include "stdio.h"
