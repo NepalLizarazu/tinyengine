@@ -61,7 +61,7 @@ tinyengine_status convolve_1x1_s8_fpreq(const q7_t *input,
 
 		int cnt = channel_div4;	//two columns
 		while (cnt > 0) {
-			q7_q15_offset_reordered_ele(src, dst)
+			q7_q15_offset_reordered_ele(src, dst)//Reads 4 bytes from src and puts them to dst (This line)
 			q7_q15_offset_reordered_ele(src, dst)
 			cnt--;
 		}
@@ -112,8 +112,9 @@ tinyengine_status convolve_1x1_s8_fpreq(const q7_t *input,
 				col_count--;
 			}
 
+			sum = MAX(sum, 0); //ReLU
 			sum = (q31_t) ((float) sum * scales[i_ch_out]);
-			sum += out_offset;
+			sum += out_offset; //Output offset is the next layer input zero
 			sum = MAX(sum, out_activation_min);
 			sum = MIN(sum, out_activation_max);
 			*out++ = (q7_t) sum;

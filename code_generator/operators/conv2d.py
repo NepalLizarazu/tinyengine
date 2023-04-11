@@ -246,7 +246,10 @@ class Conv2d(basicOperator):
                             function_name = "convolve_1x1_s8"
             elif kernel_h == 3 and params["stride_h"] == 2 and params["padding"] == 1:
                 if unsigned_input:
-                    function_name = "convolve_u8_kernel3_inputch3_stride2_pad1"
+                    if params["output_c"] == 3:
+                        function_name = "convolve_u8_kernel3_inputch3_stride2_pad1"
+                    if params["output_c"] == 1:
+                        function_name = "convolve_u8_kernel3_inputch1_stride2_pad1"
                 else:
                     if "is_patch" in params and params["is_patch"]:
                         function_name = "patchpadding_convolve_s8_kernel3_inputch3_stride2"

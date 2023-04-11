@@ -7,20 +7,20 @@
  * -------------------------------------------------------------------- */
 #include "arm_nnsupportfunctions.h" //TODO: remove this in the future for self-contained
 #include "tinyengine_function.h"
-void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(
-        const uint16_t output_y, const uint16_t output_x,
-        const int32_t *bias, const int32_t *biasR, const q7_t *ksrc, const float *scales,
-        q7_t *output, const int32_t output_offset,
-        const int32_t activation_min, const int32_t activation_max,
-        q7_t *cols_8b_iterptr, const uint16_t column_x, int channel_offset);
-tinyengine_status depthwise_kernel3x3_stride1_inplace_CHW_fpreq(q7_t *input, const uint16_t input_x, const uint16_t input_y,
-                const uint16_t input_ch, const q7_t *kernel, const int32_t *bias, const int32_t *biasR,
-                const float *scales,
-                const int32_t output_offset, const int32_t input_offset,
-                const int32_t output_activation_min,
-                const int32_t output_activation_max, q7_t *output,
-                const uint16_t output_x, const uint16_t output_y,
-                const uint16_t output_ch, q15_t *runtime_buf, q7_t pad_value)
+void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq_bitmask(
+    const uint16_t output_y, const uint16_t output_x,
+    const int32_t *bias, const int32_t *biasR, const q7_t *ksrc, const float *scales,
+    q7_t *output, q7_t *output_mask, const int mask_idx, const int32_t output_offset,
+    const int32_t activation_min, const int32_t activation_max,
+    q7_t *cols_8b_iterptr, const uint16_t column_x, int channel_offset);
+tinyengine_status depthwise_kernel3x3_stride1_inplace_CHW_fpreq_bitmask(q7_t *input, const uint16_t input_x, const uint16_t input_y,
+            const uint16_t input_ch, const q7_t *kernel, const int32_t *bias, const int32_t *biasR,
+            const float *scales,
+            const int32_t output_offset, const int32_t input_offset,
+            const int32_t output_activation_min,
+            const int32_t output_activation_max, q7_t *output, q7_t *output_mask,
+            const uint16_t output_x, const uint16_t output_y,
+            const uint16_t output_ch, q15_t *runtime_buf, q7_t pad_value)
 {
 
     uint16_t c,i,j;
@@ -56,27 +56,30 @@ tinyengine_status depthwise_kernel3x3_stride1_inplace_CHW_fpreq(q7_t *input, con
         for(i = 0; i < input_y; i++){
             cols_8b += 1;//skip front
             for(j = 0; j < input_x; j++){
-                *cols_8b++ = *src;// + input_offset; //It is important to add the input offset
+                *cols_8b++ = *src;// + input_offset;
                 src += input_ch;
             }
             cols_8b += 1;//skip end
         }
         q7_t *inplace_out = input;
-        depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(output_y, output_x, bias++, biasR++, ksrc, scales++, inplace_out, output_offset,output_activation_min, output_activation_max,cols_8b_start, input_x, input_ch);
+        if (c % 8 == 0 && c > 1) output_mask++;
+        depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq_bitmask(output_y, output_x, bias++, biasR++, ksrc, scales++, inplace_out, output_mask, c % 8, output_offset,output_activation_min, output_activation_max,cols_8b_start, input_x, input_ch);
         ksrc += 9;
         input++;
+
     }
 
 }
-void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(
-        const uint16_t output_y, const uint16_t output_x,
-        const int32_t *bias, const int32_t *biasR, const q7_t *ksrc, const float *scales,
-        q7_t *output, const int32_t output_offset,
-        const int32_t activation_min, const int32_t activation_max,
-        q7_t *cols_8b_iterptr, const uint16_t column_x, int channel_offset)
+void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq_bitmask(
+    const uint16_t output_y, const uint16_t output_x,
+    const int32_t *bias, const int32_t *biasR, const q7_t *ksrc, const float *scales,
+    q7_t *output, q7_t *output_mask, const int mask_idx, const int32_t output_offset,
+    const int32_t activation_min, const int32_t activation_max,
+    q7_t *cols_8b_iterptr, const uint16_t column_x, int channel_offset)
 {
     #define STRIDE 1
     int i, j;
+    q7_t mask_value;
     /* MACs for each output */
     for (i = 0; i < output_y; i++) {
         for (j = 0; j < output_x / 2; j++) {
@@ -108,19 +111,39 @@ void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(
             sum1 += cols_8b[3]*ksrc[8];
 
             /* requantize */
-            sum0 = MAX(sum0, 0); //ReLU
             sum0 = (float) sum0 * *scales;
-            sum0 += output_offset; //Output offset is the next layer input zero
-            sum0 = MAX(sum0, activation_min);
-            sum0 = MIN(sum0, activation_max);
+            sum0 += output_offset;
+            mask_value = 1;
+            if (sum0 < activation_min){
+                sum0 = activation_min;
+                mask_value = 0;
+            }
+            if (sum0 > activation_max){
+                sum0 = activation_max;
+                mask_value = 0;
+            }
             output[(i * output_x + j * 2) * channel_offset] = sum0;
+            if (mask_value == 1)
+                BIT_SET(output_mask[(i * output_x + j * 2) * channel_offset / 8], mask_idx);
+            else
+                BIT_CLEAR(output_mask[(i * output_x + j * 2) * channel_offset / 8], mask_idx);
 
-            sum1 = MAX(sum1, 0); //ReLU
             sum1 = (float) sum1 * *scales;
-            sum1 += output_offset; //Output offset is the next layer input zero
-            sum1 = MAX(sum1, activation_min);
-            sum1 = MIN(sum1, activation_max);
+            sum1 += output_offset;
+            mask_value = 1;
+            if (sum1 < activation_min){
+                sum1 = activation_min;
+                mask_value = 0;
+            }
+            if (sum1 > activation_max){
+                sum1 = activation_max;
+                mask_value = 0;
+            }
             output[(i * output_x + (j * 2 + 1)) * channel_offset] = sum1;
+            if (mask_value == 1)
+                BIT_SET(output_mask[(i * output_x + (j * 2 + 1)) * channel_offset / 8], mask_idx);
+            else
+                BIT_CLEAR(output_mask[(i * output_x + (j * 2 + 1)) * channel_offset / 8], mask_idx);
 
             cols_8b_iterptr += STRIDE * 2;
         }
@@ -139,12 +162,22 @@ void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(
             sum += cols_8b[1]*ksrc[7];
             sum += cols_8b[2]*ksrc[8];
 
-            sum = MAX(sum, 0); //ReLU
             sum = (float) sum * *scales;
-            sum += output_offset; //Output offset is the next layer input zero
-            sum = MAX(sum, activation_min);
-            sum = MIN(sum, activation_max);
+            sum += output_offset;
+            mask_value = 1;
+            if (sum < activation_min){
+                sum = activation_min;
+                mask_value = 0;
+            }
+            if (sum > activation_max){
+                sum = activation_max;
+                mask_value = 0;
+            }
             output[(i * output_x + output_x - 1) * channel_offset] = sum;
+            if (mask_value == 1)
+                BIT_SET(output_mask[(i * output_x + output_x - 1) * channel_offset / 8], mask_idx);
+            else
+                BIT_CLEAR(output_mask[(i * output_x + output_x - 1) * channel_offset / 8], mask_idx);
 
             cols_8b_iterptr += STRIDE;
         }

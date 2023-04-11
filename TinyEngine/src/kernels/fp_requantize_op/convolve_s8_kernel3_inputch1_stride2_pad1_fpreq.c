@@ -46,7 +46,7 @@ tinyengine_status convolve_s8_kernel3_inputch1_stride2_pad1_fpreq(
 
 	q15_t pad16 = pad_value;
 	const int16_t inoff16 = input_offset;
-	q15_t pad_out = pad16;// + inoff16; The input zero should not affect the padding value
+	q15_t pad_out = pad16 + inoff16;
 	q31_t pad_out_q15x2 = __PKHBT(pad_out, pad_out, 16);
 	q31_t offset_q15x2 = __PKHBT(inoff16, inoff16, 16);
 
@@ -75,9 +75,12 @@ tinyengine_status convolve_s8_kernel3_inputch1_stride2_pad1_fpreq(
 		//9
 		dst1 = dst1_31;
 		dst2 = dst2_31;
-
 		dst1[0] = *ip_a0++;
+		//dst1[1] = *ip_a0++;
+		//dst1[2] = *ip_a0++;
 		dst2[0] = *ip_a1++;
+		//dst2[1] = *ip_a1++;
+		//dst2[2] = *ip_a1++;
 
 		/* skip row */
 		ip_a0 += 9;
@@ -241,9 +244,8 @@ tinyengine_status convolve_s8_kernel3_inputch1_stride2_pad1_fpreq(
 				col_count--;
 			}
 
-			sum = MAX(sum, 0); //ReLU
 			sum = (float) sum * scales[i];
-			sum += output_offset; //Output offset is the next layer input zero
+			sum += output_offset;
 			sum = MAX(sum, output_activation_min);
 			sum = MIN(sum, output_activation_max);
 			*out++ = (q7_t) sum;

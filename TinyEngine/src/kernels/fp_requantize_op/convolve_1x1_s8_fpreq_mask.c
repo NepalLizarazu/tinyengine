@@ -70,7 +70,7 @@ tinyengine_status convolve_1x1_s8_fpreq_bitmask(const q7_t *input,
 			cnt--;
 		}
 
-		out = mat_mult_kernel_s8_s16_reordered_fpreq_bitmask(kernel, two_column_buffer,
+		out = mat_mult_kernel_s8_s16_reordered_fpre0q_bitmask(kernel, two_column_buffer,
 				output_ch, scales, (q7_t) out_offset, out_activation_min,
 				out_activation_max, input_ch * DIM_KER_Y * DIM_KER_X, bias,
 				out, mask);

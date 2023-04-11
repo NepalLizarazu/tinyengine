@@ -56,7 +56,7 @@ tinyengine_status depthwise_kernel3x3_stride1_inplace_CHW_fpreq(q7_t *input, con
         for(i = 0; i < input_y; i++){
             cols_8b += 1;//skip front
             for(j = 0; j < input_x; j++){
-                *cols_8b++ = *src;// + input_offset; //It is important to add the input offset
+                *cols_8b++ = *src;// + input_offset;
                 src += input_ch;
             }
             cols_8b += 1;//skip end
@@ -108,16 +108,14 @@ void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(
             sum1 += cols_8b[3]*ksrc[8];
 
             /* requantize */
-            sum0 = MAX(sum0, 0); //ReLU
             sum0 = (float) sum0 * *scales;
-            sum0 += output_offset; //Output offset is the next layer input zero
+            sum0 += output_offset;
             sum0 = MAX(sum0, activation_min);
             sum0 = MIN(sum0, activation_max);
             output[(i * output_x + j * 2) * channel_offset] = sum0;
 
-            sum1 = MAX(sum1, 0); //ReLU
             sum1 = (float) sum1 * *scales;
-            sum1 += output_offset; //Output offset is the next layer input zero
+            sum1 += output_offset;
             sum1 = MAX(sum1, activation_min);
             sum1 = MIN(sum1, activation_max);
             output[(i * output_x + (j * 2 + 1)) * channel_offset] = sum1;
@@ -139,9 +137,8 @@ void depthwise_kernel3x3_stride1_inplace_kernel_CHW_fpreq(
             sum += cols_8b[1]*ksrc[7];
             sum += cols_8b[2]*ksrc[8];
 
-            sum = MAX(sum, 0); //ReLU
             sum = (float) sum * *scales;
-            sum += output_offset; //Output offset is the next layer input zero
+            sum += output_offset;
             sum = MAX(sum, activation_min);
             sum = MIN(sum, activation_max);
             output[(i * output_x + output_x - 1) * channel_offset] = sum;

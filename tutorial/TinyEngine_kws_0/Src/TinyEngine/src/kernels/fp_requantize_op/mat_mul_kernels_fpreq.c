@@ -781,11 +781,11 @@ q7_t* mat_mult_kernel_s8_s16_reordered_fpreq(const q7_t *input_a,
 
 	uint16_t row_count = output_ch / 2;
 	const q7_t *ip_a0 = input_a;
-	/* this loop over rows in A */
+	/* this loop over rows in A (Kernel) */
 	while (row_count) {
 		/* setup pointers for B */
 		const q15_t *ip_b0 = input_b;
-		const q15_t *ip_b1 = ip_b0 + num_col_a;
+		const q15_t *ip_b1 = ip_b0 + num_col_a; //+ input_channels
 
 		/* align the second pointer for A */
 		const q7_t *ip_a1 = ip_a0 + num_col_a;
@@ -801,7 +801,7 @@ q7_t* mat_mult_kernel_s8_s16_reordered_fpreq(const q7_t *input_a,
 		uint16_t col_count = num_col_a / 4;
 		/* accumulate over the vector */
 		while (col_count) {
-			q31_t a01, a02, a11, a12;
+			q31_t a01, a02, a11, a12; //Each one of this is a weight (a[out_ch][in_ch])
 			q31_t b0 = arm_nn_read_q15x2_ia(&ip_b0);
 			q31_t b1 = arm_nn_read_q15x2_ia(&ip_b1);
 
@@ -824,26 +824,30 @@ q7_t* mat_mult_kernel_s8_s16_reordered_fpreq(const q7_t *input_a,
 			col_count--;
 		} /* while over col_count */
 
+		ch_0_out_0 = MAX(ch_0_out_0, 0); //ReLU
 		ch_0_out_0 = (q31_t) ((float) ch_0_out_0 * scale_0);
-		ch_0_out_0 += out_offset;
+		ch_0_out_0 += out_offset; //Output offset is the next layer input zero
 		ch_0_out_0 = MAX(ch_0_out_0, activation_min);
 		ch_0_out_0 = MIN(ch_0_out_0, activation_max);
 		*out_0++ = (q7_t) ch_0_out_0;
 
+		ch_0_out_1 = MAX(ch_0_out_1, 0); //ReLU
 		ch_0_out_1 = (q31_t) ((float) ch_0_out_1 * scale_0);
-		ch_0_out_1 += out_offset;
+		ch_0_out_1 += out_offset; //Output offset is the next layer input zero
 		ch_0_out_1 = MAX(ch_0_out_1, activation_min);
 		ch_0_out_1 = MIN(ch_0_out_1, activation_max);
 		*out_1++ = (q7_t) ch_0_out_1;
 
+		ch_1_out_0 = MAX(ch_1_out_0, 0); //ReLU
 		ch_1_out_0 = (q31_t) ((float) ch_1_out_0 * scale_1);
-		ch_1_out_0 += out_offset;
+		ch_1_out_0 += out_offset; //Output offset is the next layer input zero
 		ch_1_out_0 = MAX(ch_1_out_0, activation_min);
 		ch_1_out_0 = MIN(ch_1_out_0, activation_max);
 		*out_0++ = (q7_t) ch_1_out_0;
 
+		ch_1_out_1 = MAX(ch_1_out_1, 0); //ReLU
 		ch_1_out_1 = (q31_t) ((float) ch_1_out_1 * scale_1);
-		ch_1_out_1 += out_offset;
+		ch_1_out_1 += out_offset; //Output offset is the next layer input zero
 		ch_1_out_1 = MAX(ch_1_out_1, activation_min);
 		ch_1_out_1 = MIN(ch_1_out_1, activation_max);
 		*out_1++ = (q7_t) ch_1_out_1;
@@ -883,14 +887,16 @@ q7_t* mat_mult_kernel_s8_s16_reordered_fpreq(const q7_t *input_a,
 			col_count--;
 		} /* while over col_count */
 
+		ch_0_out_0 = MAX(ch_0_out_0, 0); //ReLU
 		ch_0_out_0 = (q31_t) ((float) ch_0_out_0 * *scales);
-		ch_0_out_0 += out_offset;
+		ch_0_out_0 += out_offset; //Output offset is the next layer input zero
 		ch_0_out_0 = MAX(ch_0_out_0, activation_min);
 		ch_0_out_0 = MIN(ch_0_out_0, activation_max);
 		*out_0++ = (q7_t) ch_0_out_0;
 
+		ch_0_out_1 = MAX(ch_0_out_1, 0); //ReLU
 		ch_0_out_1 = (q31_t) ((float) ch_0_out_1 * *scales);
-		ch_0_out_1 += out_offset;
+		ch_0_out_1 += out_offset; //Output offset is the next layer input zero
 		ch_0_out_1 = MAX(ch_0_out_1, activation_min);
 		ch_0_out_1 = MIN(ch_0_out_1, activation_max);
 		*out_1++ = (q7_t) ch_0_out_1;
@@ -1854,7 +1860,7 @@ q7_t* mat_mult_kernel3_input3_s8_s16_fpreq(const q7_t *input_a,
 		const float scale_1 = scales[1];
 
 		/* align the second pointer for A */
-		const q15_t *ksrc2 = ksrc + 27;
+		const q15_t *ksrc2 = ksrc + num_col_a;
 		q31_t *ksrc_31 = ksrc;
 		q31_t *ksrc2_31 = ksrc2;
 
@@ -1898,7 +1904,7 @@ q7_t* mat_mult_kernel3_input3_s8_s16_fpreq(const q7_t *input_a,
 		ch_0_out_1 = __SMLAD(ksrc_31[3], b1, ch_0_out_1);
 		ch_1_out_0 = __SMLAD(ksrc2_31[3], b0, ch_1_out_0);
 		ch_1_out_1 = __SMLAD(ksrc2_31[3], b1, ch_1_out_1);
-
+		/*
 		//------------------12
 		b0 = arm_nn_read_q15x2_ia(&ip_b0);
 		b1 = arm_nn_read_q15x2_ia(&ip_b1);
@@ -1971,41 +1977,46 @@ q7_t* mat_mult_kernel3_input3_s8_s16_fpreq(const q7_t *input_a,
 		ch_0_out_1 = __SMLAD(ksrc_31[12], b1, ch_0_out_1);
 		ch_1_out_0 = __SMLAD(ksrc2_31[12], b0, ch_1_out_0);
 		ch_1_out_1 = __SMLAD(ksrc2_31[12], b1, ch_1_out_1);
+		*/
+		//------------------9
 		q15_t _b0 = *ip_b0++;
 		q15_t _b1 = *ip_b1++;
+		ch_0_out_0 += ksrc[8] * _b0;
+		ch_0_out_1 += ksrc[8] * _b1;
+		ch_1_out_0 += ksrc2[8] * _b0;
+		ch_1_out_1 += ksrc2[8] * _b1;
 
-		ch_0_out_0 += ksrc[26] * _b0;
-		ch_0_out_1 += ksrc[26] * _b1;
-		ch_1_out_0 += ksrc2[26] * _b0;
-		ch_1_out_1 += ksrc2[26] * _b1;
-
-		ch_0_out_0 = (q31_t) ((float) ch_0_out_0 * scale_0);
-		ch_0_out_0 += out_offset;
+		ch_0_out_0 = MAX(ch_0_out_0, 0); //ReLU
+		ch_0_out_0 = (q31_t) ((float) ch_0_out_0 * scale_0); //Scale factor is: Sx1*Sw1/Sx2 to convert the result into the next input
+		ch_0_out_0 += out_offset; //Output offset is the next layer input zero
 		ch_0_out_0 = MAX(ch_0_out_0, activation_min);
 		ch_0_out_0 = MIN(ch_0_out_0, activation_max);
 		*out_0++ = (q7_t) ch_0_out_0;
 
+		ch_0_out_1 = MAX(ch_0_out_1, 0); //ReLU
 		ch_0_out_1 = (q31_t) ((float) ch_0_out_1 * scale_0);
-		ch_0_out_1 += out_offset;
+		ch_0_out_1 += out_offset; //Output offset is the next layer input zero
 		ch_0_out_1 = MAX(ch_0_out_1, activation_min);
 		ch_0_out_1 = MIN(ch_0_out_1, activation_max);
 		*out_1++ = (q7_t) ch_0_out_1;
 
+		ch_1_out_0 = MAX(ch_1_out_0, 0); //ReLU
 		ch_1_out_0 = (q31_t) ((float) ch_1_out_0 * scale_1);
-		ch_1_out_0 += out_offset;
+		ch_1_out_0 += out_offset; //Output offset is the next layer input zero
 		ch_1_out_0 = MAX(ch_1_out_0, activation_min);
 		ch_1_out_0 = MIN(ch_1_out_0, activation_max);
 		*out_0++ = (q7_t) ch_1_out_0;
 
+		ch_1_out_1 = MAX(ch_1_out_1, 0); //ReLU
 		ch_1_out_1 = (q31_t) ((float) ch_1_out_1 * scale_1);
-		ch_1_out_1 += out_offset;
+		ch_1_out_1 += out_offset; //Output offset is the next layer input zero
 		ch_1_out_1 = MAX(ch_1_out_1, activation_min);
 		ch_1_out_1 = MIN(ch_1_out_1, activation_max);
 		*out_1++ = (q7_t) ch_1_out_1;
 		scales += 2;
 
 		/* skip row */
-		ksrc += 54;
+		ksrc += 18;
 		row_count--;
 	}
 
