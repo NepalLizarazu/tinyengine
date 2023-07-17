@@ -28,8 +28,8 @@ signed char* getInput();
 signed char* getOutput();
 float* getOutput_fp();
 int32_t* getOutput_int32();
-static float lr = 0.0008;
-static float blr = 0.0004;
+static float lr = -0.0008;
+static float blr = -0.0004;
 
 void setupBuffer();
 void invoke(float* labels);

@@ -1,2 +1,4 @@
-_io.c:23:5:__io_putchar	0	static,ignoring_inline_asm
-_io.c:25:5:__io_getchar	0	static
+core_cm7.h:2301:26:ITM_SendChar	16	static,ignoring_inline_asm
+core_cm7.h:2322:25:ITM_ReceiveChar	16	static
+_io.c:23:5:__io_putchar	16	static
+_io.c:25:5:__io_getchar	8	static

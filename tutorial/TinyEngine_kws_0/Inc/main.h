@@ -20,6 +20,8 @@
 #define __MAIN_H
 
 #include "stm32f7xx_hal.h"
+#include "stm32f7xx.h"
+#include "stdio.h"
 
 #define LCD_B0_Pin GPIO_PIN_4
 #define LCD_B0_GPIO_Port GPIOE

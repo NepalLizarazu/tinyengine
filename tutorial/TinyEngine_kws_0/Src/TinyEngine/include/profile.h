@@ -15,7 +15,7 @@
  *
  * Target ISA:  ARMv7E-M
  * -------------------------------------------------------------------- */
-
+#ifndef PROFILE_H_
 #include "stm32f7xx_hal.h"
 #include <stdio.h>
 #include <string.h>
@@ -66,3 +66,5 @@ void recieveChar(char *s) {
 	}
 	HAL_UART_Receive(&UART, (uint8_t*) s, 1, 10);
 }
+
+#endif

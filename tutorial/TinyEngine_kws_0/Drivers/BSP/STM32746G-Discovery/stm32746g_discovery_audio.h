@@ -2,36 +2,17 @@
   ******************************************************************************
   * @file    stm32746g_discovery_audio.h
   * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    25-June-2015
   * @brief   This file contains the common defines and functions prototypes for
   *          the stm32746g_discovery_audio.c driver.
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; COPYRIGHT(c) 2015 STMicroelectronics</center></h2>
+  * Copyright (c) 2016 STMicroelectronics.
+  * All rights reserved.
   *
-  * Redistribution and use in source and binary forms, with or without modification,
-  * are permitted provided that the following conditions are met:
-  *   1. Redistributions of source code must retain the above copyright notice,
-  *      this list of conditions and the following disclaimer.
-  *   2. Redistributions in binary form must reproduce the above copyright notice,
-  *      this list of conditions and the following disclaimer in the documentation
-  *      and/or other materials provided with the distribution.
-  *   3. Neither the name of STMicroelectronics nor the names of its contributors
-  *      may be used to endorse or promote products derived from this software
-  *      without specific prior written permission.
-  *
-  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
@@ -119,7 +100,7 @@
 #define AUDIO_OUT_SAIx_DMAx_IRQHandler           DMA2_Stream4_IRQHandler
 
 /* Select the interrupt preemption priority for the DMA interrupt */
-#define AUDIO_OUT_IRQ_PREPRIO                    ((uint32_t)5)   /* Select the preemption priority level(0 is the highest) */
+#define AUDIO_OUT_IRQ_PREPRIO                    ((uint32_t)0x0E)   /* Select the preemption priority level(0 is the highest) */
 
 /*------------------------------------------------------------------------------
                         AUDIO IN CONFIGURATION
@@ -151,7 +132,7 @@
 #define AUDIO_IN_INT_IRQHandler                  EXTI15_10_IRQHandler
 
 /* Select the interrupt preemption priority and subpriority for the IT/DMA interrupt */
-#define AUDIO_IN_IRQ_PREPRIO                     ((uint32_t)6)   /* Select the preemption priority level(0 is the highest) */
+#define AUDIO_IN_IRQ_PREPRIO                     ((uint32_t)0x0F)   /* Select the preemption priority level(0 is the highest) */
 
 /*------------------------------------------------------------------------------
              CONFIGURATION: Audio Driver Configuration parameters
@@ -167,7 +148,7 @@
 /* AudioFreq * DataSize (2 bytes) * NumChannels (Stereo: 2) */
 #define DEFAULT_AUDIO_IN_FREQ               I2S_AUDIOFREQ_16K
 #define DEFAULT_AUDIO_IN_BIT_RESOLUTION     ((uint8_t)16)
-#define DEFAULT_AUDIO_IN_CHANNEL_NBR        ((uint8_t)2) /* Mono = 1, Stereo = 2 */
+#define DEFAULT_AUDIO_IN_CHANNEL_NBR        ((uint8_t)2) /* Mono = 1, Stereo = 2 */ // Original is 2
 #define DEFAULT_AUDIO_IN_VOLUME             ((uint16_t)64)
 
 /*------------------------------------------------------------------------------
@@ -181,8 +162,7 @@
 /*------------------------------------------------------------------------------
                             OUTPUT DEVICES definition
 ------------------------------------------------------------------------------*/
-
-/* Alias on existing output devices to adapt to Birdie discovery board 2 headphones output */
+/* Alias on existing output devices to adapt for 2 headphones output */
 #define OUTPUT_DEVICE_HEADPHONE1 OUTPUT_DEVICE_HEADPHONE
 #define OUTPUT_DEVICE_HEADPHONE2 OUTPUT_DEVICE_SPEAKER /* Headphone2 is connected to Speaker output of the wm8994 */
    
@@ -246,8 +226,9 @@ void  BSP_AUDIO_OUT_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
 /** @defgroup STM32746G_DISCOVERY_AUDIO_IN_Exported_Functions STM32746G_DISCOVERY_AUDIO_IN Exported Functions
   * @{
   */
-uint8_t BSP_AUDIO_IN_Init(uint16_t InputDevice, uint8_t Volume, uint32_t AudioFreq);
-uint8_t BSP_AUDIO_IN_OUT_Init(uint16_t InputDevice, uint16_t OutputDevice, uint8_t Volume, uint32_t AudioFreq);
+uint8_t BSP_AUDIO_IN_Init(uint32_t AudioFreq, uint32_t BitRes, uint32_t ChnlNbr);
+uint8_t BSP_AUDIO_IN_InitEx(uint16_t InputDevice, uint32_t AudioFreq, uint32_t BitRes, uint32_t ChnlNbr);
+uint8_t BSP_AUDIO_IN_OUT_Init(uint16_t InputDevice, uint16_t OutputDevice, uint32_t AudioFreq, uint32_t BitRes, uint32_t ChnlNbr);
 uint8_t BSP_AUDIO_IN_Record(uint16_t *pData, uint32_t Size);
 uint8_t BSP_AUDIO_IN_Stop(uint32_t Option);
 uint8_t BSP_AUDIO_IN_Pause(void);
@@ -292,4 +273,3 @@ void  BSP_AUDIO_IN_MspDeInit(SAI_HandleTypeDef *hsai, void *Params);
 
 #endif /* __STM32746G_DISCOVERY_AUDIO_H */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

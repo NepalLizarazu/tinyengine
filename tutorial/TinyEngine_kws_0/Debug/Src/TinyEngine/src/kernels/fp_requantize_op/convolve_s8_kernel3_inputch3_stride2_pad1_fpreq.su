@@ -1,1 +1,1 @@
-convolve_s8_kernel3_inputch3_stride2_pad1_fpreq.c:25:19:convolve_s8_kernel3_inputch3_stride2_pad1_fpreq	144	static,ignoring_inline_asm
+convolve_s8_kernel3_inputch3_stride2_pad1_fpreq.c:29:19:convolve_s8_kernel3_inputch1_stride2_pad1_fpreq	744	static,ignoring_inline_asm

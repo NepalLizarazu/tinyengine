@@ -106,6 +106,7 @@ def main():
             dummy_address,
             outputTables=outTable,
             is_training=True,
+            last_layer_y_scale=list(scale_params.values())[-1]
         )
         # set detection outputs before codegen if any
         code_generator.codeGeneration()

@@ -242,7 +242,7 @@ class groupConv2d(basicOperator):
                 )
         elif not tflite_op:
             # function name
-            print(params)
+            #print(params)
             if (
                 params["kernel_h"] == 1
                 and params["kernel_w"] == 1

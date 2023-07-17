@@ -33,6 +33,10 @@ void detectResponse(int person, float ms, int training_mode, int pred,
 void detectResponse(int person, float ms);
 #endif
 
+void detect_keyword(uint8_t inf_class);
+void clean_screen_green();
+void clean_screen_red();
+void clean_screen_black();
 void displaystring(char *buf, int x, int y);
 
 #endif

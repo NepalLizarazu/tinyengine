@@ -1,5 +1,13 @@
-profile.h:28:6:void printLog(const char*)	24	static
-profile.h:49:6:void recieveChar(char*)	24	static
-main.cpp:55:6:void train(int)	0	static
-main.cpp:66:6:void invoke_new_weights_givenimg(signed char*)	8	static
-main.cpp:83:5:int main()	264	static,ignoring_inline_asm
+profile.h:28:6:void printLog(const char*)	16	static
+profile.h:49:6:void recieveChar(char*)	16	static
+cmath:1771:3:constexpr float std::round(float)	16	static
+main.cpp:73:6:void train(int)	24	static
+main.cpp:84:6:void invoke_new_weights_givenimg(signed char*)	24	static
+main.cpp:109:5:int main()	408	static,ignoring_inline_asm
+main.cpp:387:6:void SystemClock_Config()	80	static
+main.cpp:429:13:void Error_Handler()	8	static
+main.cpp:436:13:void CPU_CACHE_Enable()	24	static,ignoring_inline_asm
+main.cpp:443:13:void MPU_Config()	24	static
+main.cpp:513:13:void MX_GPIO_Init()	72	static
+main.cpp:707:9:uint8_t CheckForUserInput()	8	static
+main.cpp:717:13:void Input_Mode_Hint()	16	static

@@ -384,6 +384,7 @@ class TTEParser(object):
                             "QAS": QAS,
                             "input_dtype": last_op.params["input_dtype"],
                             "output_dtype": "float32",
+                            "output_scale": self.scale_params["v5_y_scale"] #TODO This is hardcoded, should be the last layer scale, not the v5
                         }
                         bias_update_op = bias_update.bias_update(bias_update_params)
                         self.layer.append(bias_update_op)
