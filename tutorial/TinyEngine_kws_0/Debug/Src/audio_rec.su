@@ -1,0 +1,5 @@
+audio_rec.c:67:10:AudioRec	24	static
+audio_rec.c:135:6:AudioRec_SetHint	16	static
+audio_rec.c:172:6:BSP_AUDIO_IN_TransferComplete_CallBack	4	static
+audio_rec.c:183:6:BSP_AUDIO_IN_HalfTransfer_CallBack	4	static
+audio_rec.c:194:6:BSP_AUDIO_IN_Error_CallBack	8	static

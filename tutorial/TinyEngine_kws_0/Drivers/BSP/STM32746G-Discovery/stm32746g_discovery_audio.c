@@ -2,9 +2,19 @@
   ******************************************************************************
   * @file    stm32746g_discovery_audio.c
   * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    25-June-2015
   * @brief   This file provides the Audio driver for the STM32746G-Discovery board.
+  *
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2016 STMicroelectronics.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
   @verbatim
     How To use this driver:
     -----------------------
@@ -63,34 +73,17 @@
        4- Supports only 16-bits audio data size.
   @endverbatim  
   ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; COPYRIGHT(c) 2015 STMicroelectronics</center></h2>
-  *
-  * Redistribution and use in source and binary forms, with or without modification,
-  * are permitted provided that the following conditions are met:
-  *   1. Redistributions of source code must retain the above copyright notice,
-  *      this list of conditions and the following disclaimer.
-  *   2. Redistributions in binary form must reproduce the above copyright notice,
-  *      this list of conditions and the following disclaimer in the documentation
-  *      and/or other materials provided with the distribution.
-  *   3. Neither the name of STMicroelectronics nor the names of its contributors
-  *      may be used to endorse or promote products derived from this software
-  *      without specific prior written permission.
-  *
-  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  *
-  ******************************************************************************
   */
+
+/* Dependencies
+- stm32746g_discovery.c
+- stm32f7xx_hal_sai.c
+- stm32f7xx_hal_dma.c
+- stm32f7xx_hal_gpio.c
+- stm32f7xx_hal_cortex.c
+- stm32f7xx_hal_rcc_ex.h
+- wm8994.c
+EndDependencies */
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32746g_discovery_audio.h"
@@ -251,7 +244,7 @@ void BSP_AUDIO_OUT_ChangeBuffer(uint16_t *pData, uint16_t Size)
 /**
   * @brief  This function Pauses the audio file stream. In case
   *         of using DMA, the DMA Pause feature is used.
-  * @note When calling BSP_AUDIO_OUT_Pause() function for pause, only
+  * @note When calling BSP_AUDIO_/OUT_Pause() function for pause, only
   *          BSP_AUDIO_OUT_Resume() function should be called for resume (use of BSP_AUDIO_OUT_Play() 
   *          function for resume could lead to unexpected behaviour).
   * @retval AUDIO_OK if correct communication, else wrong communication
@@ -485,14 +478,12 @@ void HAL_SAI_ErrorCallback(SAI_HandleTypeDef *hsai)
   audio_in_state = HAL_SAI_GetState(&haudio_in_sai);
 
   /* Determines if it is an audio out or audio in error */
-  if ((audio_out_state == HAL_SAI_STATE_BUSY) || (audio_out_state == HAL_SAI_STATE_BUSY_TX)
-   || (audio_out_state == HAL_SAI_STATE_TIMEOUT) || (audio_out_state == HAL_SAI_STATE_ERROR))
+  if ((audio_out_state == HAL_SAI_STATE_BUSY) || (audio_out_state == HAL_SAI_STATE_BUSY_TX))
   {
     BSP_AUDIO_OUT_Error_CallBack();
   }
 
-  if ((audio_in_state == HAL_SAI_STATE_BUSY) || (audio_in_state == HAL_SAI_STATE_BUSY_RX)
-   || (audio_in_state == HAL_SAI_STATE_TIMEOUT) || (audio_in_state == HAL_SAI_STATE_ERROR))
+  if ((audio_in_state == HAL_SAI_STATE_BUSY) || (audio_in_state == HAL_SAI_STATE_BUSY_RX))
   {
     BSP_AUDIO_IN_Error_CallBack();
   }
@@ -779,15 +770,28 @@ static void SAIx_Out_DeInit(void)
 /** @defgroup STM32746G_DISCOVERY_AUDIO_Out_Private_Functions STM32746G_DISCOVERY_AUDIO Out Private Functions
   * @{
   */ 
-  
+
+/**
+  * @brief  Initializes wave recording.
+  * @param  AudioFreq: Audio frequency to be configured for the SAI peripheral.
+  * @param  BitRes: Audio frequency to be configured.
+  * @param  ChnlNbr: Channel number.
+  * @retval AUDIO_OK if correct communication, else wrong communication
+  */
+uint8_t BSP_AUDIO_IN_Init(uint32_t AudioFreq, uint32_t BitRes, uint32_t ChnlNbr)
+{
+  return BSP_AUDIO_IN_InitEx(INPUT_DEVICE_DIGITAL_MICROPHONE_2, AudioFreq, BitRes, ChnlNbr);
+}
+
 /**
   * @brief  Initializes wave recording.
   * @param  InputDevice: INPUT_DEVICE_DIGITAL_MICROPHONE_2 or INPUT_DEVICE_INPUT_LINE_1
-  * @param  Volume: Initial volume level (in range 0(Mute)..80(+0dB)..100(+17.625dB))
   * @param  AudioFreq: Audio frequency to be configured for the SAI peripheral.
+  * @param  BitRes: Audio frequency to be configured.
+  * @param  ChnlNbr: Channel number.
   * @retval AUDIO_OK if correct communication, else wrong communication
   */
-uint8_t BSP_AUDIO_IN_Init(uint16_t InputDevice, uint8_t Volume, uint32_t AudioFreq)
+uint8_t BSP_AUDIO_IN_InitEx(uint16_t InputDevice, uint32_t AudioFreq, uint32_t BitRes, uint32_t ChnlNbr)
 {
   uint8_t ret = AUDIO_ERROR;
   uint32_t deviceid = 0x00;
@@ -849,7 +853,7 @@ uint8_t BSP_AUDIO_IN_Init(uint16_t InputDevice, uint8_t Volume, uint32_t AudioFr
     if(ret == AUDIO_OK)
     {
       /* Initialize the codec internal registers */
-      audio_drv->Init(AUDIO_I2C_ADDRESS, InputDevice, Volume, AudioFreq);
+      audio_drv->Init(AUDIO_I2C_ADDRESS, InputDevice, 100, AudioFreq);
     }
   }
   return ret;
@@ -860,11 +864,12 @@ uint8_t BSP_AUDIO_IN_Init(uint16_t InputDevice, uint8_t Volume, uint32_t AudioFr
   * @param  InputDevice: INPUT_DEVICE_DIGITAL_MICROPHONE_2
   * @param  OutputDevice: OUTPUT_DEVICE_SPEAKER, OUTPUT_DEVICE_HEADPHONE,
   *                       or OUTPUT_DEVICE_BOTH.
-  * @param  Volume: Initial volume level (in range 0(Mute)..80(+0dB)..100(+17.625dB))
   * @param  AudioFreq: Audio frequency to be configured for the SAI peripheral.
+  * @param  BitRes: Audio frequency to be configured.
+  * @param  ChnlNbr: Channel number.
   * @retval AUDIO_OK if correct communication, else wrong communication
   */
-uint8_t BSP_AUDIO_IN_OUT_Init(uint16_t InputDevice, uint16_t OutputDevice, uint8_t Volume, uint32_t AudioFreq)
+uint8_t BSP_AUDIO_IN_OUT_Init(uint16_t InputDevice, uint16_t OutputDevice, uint32_t AudioFreq, uint32_t BitRes, uint32_t ChnlNbr)
 {
   uint8_t ret = AUDIO_ERROR;
   uint32_t deviceid = 0x00;
@@ -934,7 +939,7 @@ uint8_t BSP_AUDIO_IN_OUT_Init(uint16_t InputDevice, uint16_t OutputDevice, uint8
     if(ret == AUDIO_OK)
     {
       /* Initialize the codec internal registers */
-      audio_drv->Init(AUDIO_I2C_ADDRESS, InputDevice | OutputDevice, Volume, AudioFreq);
+      audio_drv->Init(AUDIO_I2C_ADDRESS, InputDevice | OutputDevice, 100, AudioFreq);
     }
   }
   return ret;
@@ -1357,4 +1362,3 @@ static void SAIx_In_DeInit(void)
   * @}
   */ 
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

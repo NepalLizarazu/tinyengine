@@ -141,6 +141,56 @@ void detectResponse(int person, float ms, int training_mode, int pred,
   BSP_LCD_DisplayStringAt(273, 180, buf, LEFT_MODE);
 }
 
+void detect_keyword(uint8_t inf_class){
+	char buf[20];//'yes,no,up,down,left,right,on,off,'
+
+	sprintf(buf, " Prediction:");
+    BSP_LCD_DisplayStringAt(273, 100, buf, LEFT_MODE);
+    sprintf(buf, " Class: %d",inf_class);
+    BSP_LCD_DisplayStringAt(273, 120, buf, LEFT_MODE);
+	if (inf_class == 0){
+		sprintf(buf, " KW: YES    ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 1){
+		sprintf(buf, " KW: NO     ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 2){
+		sprintf(buf, " KW: UP     ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 3){
+		sprintf(buf, " KW: DOWN   ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 4){
+		sprintf(buf, " KW: LEFT   ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 5){
+		sprintf(buf, " KW: RIGHT  ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 6){
+		sprintf(buf, " KW: ON     ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 7){
+		sprintf(buf, " KW: OFF    ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 8){
+		sprintf(buf, " KW: NOISE  ");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}else if (inf_class == 9){
+		sprintf(buf, " KW: UNKNOWN");
+		BSP_LCD_DisplayStringAt(273, 140, buf, LEFT_MODE);
+	}
+}
+
+void clean_screen_green(){
+	drawGreenBackground(270, 480, 1, 280);
+}
+void clean_screen_red(){
+	drawRedBackground(270, 480, 1, 280);
+}
+void clean_screen_black(){
+	drawBlackBackground(270, 480, 1, 280);
+}
+
 #else
 void detectResponse(int person, float ms) {
   if (person) {
