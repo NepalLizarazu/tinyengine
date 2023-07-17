@@ -52,6 +52,7 @@ class CodeGenerator:
         outputTables=None,
         detectionUtils=None,
         is_training=False,
+        last_layer_y_scale = 1,
     ):
         self.MemSche = memsche
 
@@ -76,6 +77,7 @@ class CodeGenerator:
         self.outputTables = outputTables
         self.detectionUtils = detectionUtils
         self.is_training = is_training
+        self.last_layer_y_scale = last_layer_y_scale
 
     def _readOnly(self, name):
         if self.outputTables is None or name is None:
@@ -326,6 +328,7 @@ void invoke_1patch(uint16_t pad_t, uint16_t pad_b, uint16_t pad_l ,uint16_t pad_
                 if "is_patch" not in layer_info or not layer_info["is_patch"]:
                     break  # end of patch-based
                 string = "/* layer " + str(layercnt) + ":" + layer_info["op"] + " */\n"
+
                 layercnt += 1
                 fp.write(string)
                 if layer_info["op"] == "CONV_2D":
@@ -376,6 +379,8 @@ void invoke_1patch(uint16_t pad_t, uint16_t pad_b, uint16_t pad_l ,uint16_t pad_
         for i, op in enumerate(schedule.layer):
             layer_info = op.get_layer_info()
             string = "/* layer " + str(i) + ":" + layer_info["op"] + " */\n"
+            #print(layer_info["op"])
+            
             fp.write(string)
 
             if layer_info["op"] == "CONV_2D":
@@ -411,7 +416,6 @@ void invoke_1patch(uint16_t pad_t, uint16_t pad_b, uint16_t pad_l ,uint16_t pad_
             else:
                 string = self._genOpstr(op)
                 fp.write(string)
-
         string = "}\n"
         fp.write(string)
 
