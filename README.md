@@ -7,7 +7,7 @@ TinyEngine is a part of MCUNet, which also consists of TinyNAS. MCUNet is a syst
 
 ### [MCUNetV1](https://mcunet.mit.edu/#mcunetv1) | [MCUNetV2](https://mcunet.mit.edu/#mcunetv2) | [MCUNetV3](https://mcunet.mit.edu/#mcunetv3)
 
-### [Demo (Inference)](https://www.youtube.com/watch?v=YvioBgtec4U)
+### [Demo (Inference)](https://www.youtube.com/watch?v=F4XKn0iDfxg)
 
 ![demo](assets/figures/mcunet_demo.gif)
 
@@ -19,6 +19,8 @@ TinyEngine is a part of MCUNet, which also consists of TinyNAS. MCUNet is a syst
 
 **If you are interested in getting updates, please sign up [here](https://forms.gle/UW1uUmnfk1k6UJPPA) to get notified!**
 
+- **(2023/02)** We now support running [the inference tutorial](tutorial/inference) without an Arducam. Feel free to give it a try!
+- **(2023/02)** We release the source code of the [person detection demo](examples/openmv_person_detection), [face mask detection demo](examples/openmv_face_mask_detection), and [on-device training demo](examples/openmv_training_sparse) on OpenMV Cam H7.
 - **(2022/12)** We update the [measured results](README.md#measured-results) on STM32H743 with the new versions of the inference libraries.
 - **(2022/12)** We release the source code for patch-based inference and update the [tutorial of our inference demo](tutorial/inference/README.md) to provide option that generates patch-based inference code for the visual wake words (VWW) demo.
 - **(2022/11)** We release the source code of Tiny Training Engine, and include the [tutorial of our training demo](tutorial/training) for training a visual wake words (VWW) model on microcontrollers.
@@ -155,8 +157,10 @@ The **latency** results:
 | mcunet-in3                   |           7821ms        |         770ms      |    414ms  |   336ms    |
 | mcunet-in4                   |           OOM           |         OOM        |    516ms  |   463ms    |
 | *# baseline models*          |                         |                    |           |            |
-| mbv2-w0.35                   |           OOM           |         OOM        |   118ms   |   124ms    |
-| proxyless-w0.3              |           3801ms        |         380ms      |   205ms   |   176ms    |
+| proxyless-w0.3-r64              |          512ms         |        54kB      |  35kB   |   23kB    |
+| proxyless-w0.3-r176               |           3801ms        |         380ms      |   205ms   |   176ms    |
+| mbv2-w0.3-r64                   |           467ms         |        43ms      |  29ms   |   23ms    |
+
 
 The **peak memory (SRAM)** results:
 
@@ -173,8 +177,9 @@ The **peak memory (SRAM)** results:
 | mcunet-in3                   |           493kB         |        493kB       |    243kB  |   260kB    |
 | mcunet-in4                   |           OOM           |         OOM        |    342kB  |   416kB    |
 | *# baseline models*          |                         |                    |           |            |
-| mbv2-w0.35                   |           OOM           |         OOM        |   296kB   |   295kB    |
-| proxyless-w0.3              |           453kB         |        453kB       |   221kB   |   259kB    |
+| proxyless-w0.3-r64              |          128kB         |        136kB      |  97kB   |   35kB    |
+| proxyless-w0.3-r176              |           453kB         |        453kB       |   221kB   |   259kB    |
+| mbv2-w0.3-r64                   |           173kB         |        173kB      |  88kB   |   61kB    |
 
 The **Flash memory usage** results:
 
@@ -191,8 +196,9 @@ The **Flash memory usage** results:
 | mcunet-in3                   |          1091kB         |        1106kB      |    867kB  |   835kB    |
 | mcunet-in4                   |           OOM           |         OOM        |    1843kB |  1825kB    |
 | *# baseline models*          |                         |                    |           |            |
-| mbv2-w0.35                   |           OOM           |         OOM        |    857kB  |   839kB    |
-| proxyless-w0.3              |          1065kB         |        1075kB      |   865kB   |   842kB    |
+| proxyless-w0.3-r64              |          1065kB         |        1084kB      |   865kB   |   777kB    |
+| proxyless-w0.3-r176              |          1065kB         |        1084kB      |   865kB   |   779kB    |
+| mbv2-w0.3-r64                   |           940kB           |         959kB        |    768kB  |   690kB    |
 
 ## Citation
 
