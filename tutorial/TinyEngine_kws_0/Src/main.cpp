@@ -68,6 +68,9 @@ char keywords[10][14] = { " KW: SILENCE ", " KW: UNKNOWN ", "   KW: YES   ",
 		"   KW: NO    ", "   KW: UP    ", "  KW: DOWN   ", "  KW: LEFT   ",
 		"  KW: RIGHT  ", "   KW: ON    ", "  KW: OFF   " };
 
+//Modify this value: depending on the model
+float x_scale = 0.6830914665670956; // Input scale calculated for GSC v2
+
 int in_mode = 0; // 0 is using dummy inputs; 1 is using microphone
 int t_mode = 0; //0 for Inference, 1 for Training
 void train(int cls) {
@@ -173,14 +176,7 @@ int main(void) {
 			first = 1;
 			got_input = 0;
 			Input_Mode_Hint();
-//			BSP_LCD_SetBackColor(LCD_COLOR_WHITE);
-//			BSP_LCD_SetTextColor(LCD_COLOR_BLUE);
-//			BSP_LCD_DisplayStringAt(0, BSP_LCD_GetYSize() - 115,
-//					(char*) "  TRAINING MODE  ", CENTER_MODE);
-//			BSP_LCD_SetBackColor(LCD_COLOR_WHITE);
-//			BSP_LCD_SetTextColor(LCD_COLOR_BLUE);
-//			BSP_LCD_DisplayStringAt(0, BSP_LCD_GetYSize() - 95,
-//					(char*) "   Training KW ?   ", CENTER_MODE);
+
 		} else if (s[0] == 'I') { 	//Inference
 			t_mode = 0;
 			got_input = 0;
@@ -189,7 +185,7 @@ int main(void) {
 			Input_Mode_Hint();
 		} else if (s[0] == '+') { 	//Go to next sample in dummy inputs
 			in_idx++;
-			if (in_idx == 28) {
+			if (in_idx == 20) {
 				in_idx = 0;
 			}
 		} else if (s[0] == 'R') { 	//Input Mode: Record audio
