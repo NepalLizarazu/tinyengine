@@ -193,7 +193,7 @@ tinyengine_status convolve_s8_kernel3_inputch1_stride2_pad1_fpreq(
 			/* Computation is filed for every 2 columns */
 			if (two_column_buf == runtime_buf + 2 * 9) {
 
-				out = mat_mult_kernel3_input3_s8_s16_fpreq(kernel, runtime_buf,
+				out = mat_mult_kernel3_input1_s8_s16_fpreq(kernel, runtime_buf,
 						output_ch, scales, output_offset, output_activation_min,
 						output_activation_max, input_ch * kernel_y * kernel_x,
 						bias, out, kbuf);
